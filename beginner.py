@@ -75,18 +75,97 @@
 # print(user1.add_money(500000))
 
 # 4
-class Dokon:
-    def __init__(self,dokon_nomi):
-        self.dokon = dokon_nomi
-        self.mahsulot = []
-        self.soni = 0
-    def add_product(self,mahsulot_nomi):
-        self.mahsulot.append(mahsulot_nomi)
-        self.soni += 1
-    def remove_product(self,mahsulot_name):
-        self.mahsulot.remove(mahsulot_name)
-        self.soni -= 1
-    def get_info(self):
-        matn = "\n".join([name for name in self.mahsulot])
-        return f"{self.dokon} dokonida {self.soni}ta mahsulot bor va ular:\n{matn}"
+# class Dokon:
+#     def __init__(self,dokon_nomi):
+#         self.dokon = dokon_nomi
+#         self.mahsulot = []
+#         self.soni = 0
+#     def add_product(self,mahsulot_nomi):
+#         self.mahsulot_nomi = mahsulot_nomi
+#         self.mahsulot.append(self.mahsulot_nomi)
+#         self.soni += 1
+#     def remove_product(self,mahsulot_name):
+#         self.mahsulot.remove(mahsulot_name)
+#         self.soni -= 1
+#     def change_product(self,eski_mahsulot,yangi_mahsulot):
+#        for index,pro in enumerate(self.mahsulot):
+#            if pro == eski_mahsulot:
+#                self.mahsulot[index] = yangi_mahsulot
+#     def get_info(self):
+#         matn = "\n".join([name for name in self.mahsulot])
+#         return f"{self.dokon} dokonida {self.soni}ta mahsulot bor va ular:\n{matn}"
     
+# dokon = Dokon("magnit")
+# dokon.add_product("olma")
+# dokon.add_product("uzum")
+# dokon.add_product("anor")
+# dokon.change_product("anor","behi")
+# dokon.change_product("uzum" , "shaftoli")
+# print(dokon.get_info())
+
+# 5
+# class Kompaniya:
+#     def __init__(self,kompaniya_nomi):
+#         self.kompaniya = kompaniya_nomi
+#         self.ishchilar = []
+#         self.soni = 0
+#     def add_worker(self,ishchi):
+#         self.ishchi = ishchi
+#         self.ishchilar.append(self.ishchi)
+#         self.soni += 1
+#     def remove_worker(self,worker):
+#         self.ishchilar.remove(worker)
+#         self.soni -= 1
+#     def change_worker(self,old_worker,new_worker):
+#         for index,pro in enumerate(self.ishchilar):
+#             if pro == old_worker:
+#                 self.ishchilar[index] = new_worker
+#     def get_info(self):
+#         matn = "\n".join([name for name in self.ishchilar])
+#         return f"{self.kompaniya} kompaniyasida {self.soni}ta ishchi bor va ular: \n{matn}"
+
+# kompaniya = Kompaniya("CyberNest")
+# kompaniya.add_worker("jorj")
+# kompaniya.add_worker("tom")
+# kompaniya.add_worker("jasica")
+# kompaniya.add_worker("sevinchoy")
+# kompaniya.add_worker("ben")
+# kompaniya.remove_worker("jorj")
+# kompaniya.change_worker("ben","rayhona")
+# print(kompaniya.get_info())
+
+# 6
+# class Mashina:
+#     def __init__(self, model, speed):
+#         self.model = model
+#         self.speed = speed
+#     def speed_up(self):
+#         self.speed += 10
+#         if self.speed > 240:
+#             self.speed = 240
+#         return self.speed
+#     def slow_down(self):
+#         self.speed -= 10
+#         if self.speed < 0:
+#             self.speed = 0
+#         return self.speed
+
+# mashina = Mashina("Tesla", 90)
+# print(mashina.speed_up())
+
+# 7
+# class Telefon:
+#     def __init__(self,nom,brend,batareya):
+#         self.nom = nom
+#         self.brend = brend
+#         self.batareya = batareya
+#     def charge(self):
+#         self.batareya += 10
+#         if self.batareya > 100:
+#             self.batareya = 100
+#         return self.batareya
+# tel = Telefon("iPhone 17","Apple",90)
+# print(tel.charge())
+
+# 8
+class 
