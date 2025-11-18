@@ -168,4 +168,50 @@
 # print(tel.charge())
 
 # 8
-class 
+# class Oqituvchi:
+#     def __init__(self,name,subject,experiment):
+#         self.name = name
+#         self.subject = subject
+#         self.experiment = experiment
+#     def get_info(self):
+#         return f"O'qituvchining ismi: {self.name}\nO'qituvchi dars beradigan fan: {self.subject}\nO'qituvchining tajribasi: {self.experiment}"
+# ustoz = Oqituvchi("Mirzabek","Dasturlash","4yil")
+# print(ustoz.get_info())
+
+# 9
+# class Kompyuter:
+#     def __init__(self,ram,hdd,cpu):
+#         self.ram = ram
+#         self.hdd = hdd
+#         self.cpu = cpu
+#     def get_info(self):
+#         return f"Kompyuterning RAMi: {self.ram}\nKompyuterning xotirasi: {self.hdd}\nKompyuterning CPUsi: {self.cpu}"
+# kompyuter = Kompyuter("8GB DDR4 2666MHz Kingston","Seagate Barracuda 1TB HDD","Intel Core i5-10400F")
+# print(kompyuter.get_info())
+
+# 10
+class Sinf:
+    def __init__(self,sinf):
+        self.sinf = sinf
+        self.oquvchilar = []
+        self.soni = 0
+    def add_pupil(self,new_pupil):
+        self.new_pupil = new_pupil
+        if self.new_pupil not in self.oquvchilar:
+            self.oquvchilar.append(new_pupil)
+            self.soni += 1
+    def del_pupil(self,pupil):
+        self.pupil = pupil
+        if self.pupil in self.oquvchilar:
+            self.oquvchilar.remove(pupil)
+            self.soni -= 1
+    def get_info(self):
+        self.matn = "\n".join(self.oquvchilar)
+        return f"{self.sinf} sinfida {self.soni} ta o'quvchi bor va ular:\n{self.matn}"
+pupil = Sinf("8-A")
+pupil.add_pupil("marjona")
+pupil.add_pupil("rayhona")
+pupil.add_pupil("fotima")
+pupil.add_pupil("sevinchoy")
+pupil.add_pupil("marjona")
+print(pupil.get_info())
