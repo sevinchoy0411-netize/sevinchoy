@@ -190,28 +190,96 @@
 # print(kompyuter.get_info())
 
 # 10
-class Sinf:
-    def __init__(self,sinf):
-        self.sinf = sinf
-        self.oquvchilar = []
-        self.soni = 0
-    def add_pupil(self,new_pupil):
-        self.new_pupil = new_pupil
-        if self.new_pupil not in self.oquvchilar:
-            self.oquvchilar.append(new_pupil)
-            self.soni += 1
-    def del_pupil(self,pupil):
-        self.pupil = pupil
-        if self.pupil in self.oquvchilar:
-            self.oquvchilar.remove(pupil)
-            self.soni -= 1
-    def get_info(self):
-        self.matn = "\n".join(self.oquvchilar)
-        return f"{self.sinf} sinfida {self.soni} ta o'quvchi bor va ular:\n{self.matn}"
-pupil = Sinf("8-A")
-pupil.add_pupil("marjona")
-pupil.add_pupil("rayhona")
-pupil.add_pupil("fotima")
-pupil.add_pupil("sevinchoy")
-pupil.add_pupil("marjona")
-print(pupil.get_info())
+# class Sinf:
+#     def __init__(self,sinf):
+#         self.sinf = sinf
+#         self.oquvchilar = []
+#         self.soni = 0
+#     def add_pupil(self,new_pupil):
+#         self.new_pupil = new_pupil
+#         if self.new_pupil not in self.oquvchilar:
+#             self.oquvchilar.append(new_pupil)
+#             self.soni += 1
+#     def del_pupil(self,pupil):
+#         self.pupil = pupil
+#         if self.pupil in self.oquvchilar:
+#             self.oquvchilar.remove(pupil)
+#             self.soni -= 1
+#     def get_info(self):
+#         self.matn = "\n".join(self.oquvchilar)
+#         return f"{self.sinf} sinfida {self.soni} ta o'quvchi bor va ular:\n{self.matn}"
+# pupil = Sinf("8-A")
+# pupil.add_pupil("marjona")
+# pupil.add_pupil("rayhona")
+# pupil.add_pupil("fotima")
+# pupil.add_pupil("sevinchoy")
+# pupil.add_pupil("marjona")
+# print(pupil.get_info())
+
+# 11
+# class Shaxs:
+#     def __init__(self,ism,yosh):
+#         self.ism = ism
+#         self.yosh = yosh
+#     def tanishuv(self):
+#         return f"Mening ismim {self.ism} yoshim {self.yosh}"
+# shaxs = Shaxs("sevinchoy",14)
+# print(shaxs.tanishuv())
+
+# 12
+# class Maktab:
+#     def __init__(self,maktab_soni):
+#         self.maktab = maktab_soni
+#         self.sinflar = []
+#         self.soni = 0
+#     def add_class(self,new_class):
+#         self.new_class = new_class
+#         if self.new_class not in self.sinflar:
+#             self.sinflar.append(new_class)
+#             self.soni += 1
+#     def get_info(self):
+#         self.matn = "\n".join(self.sinflar)
+#         return f"{self.maktab} - maktabda {self.soni}ta sinf bor va ular:\n{self.matn}"
+# maktab = Maktab(6)
+# maktab.add_class("1-A")
+# maktab.add_class("2-A")
+# maktab.add_class("3-A")
+# maktab.add_class("4-A")
+# maktab.add_class("5-A")
+# maktab.add_class("6-A")
+# maktab.add_class("7-A")
+# maktab.add_class("8-A")
+# print(maktab.get_info())
+
+# 13
+# class Kitob:
+#     def __init__(self,nomi,muallifi,sahifa_soni):
+#         self.nomi = nomi
+#         self.muallifi = muallifi
+#         self.sahifa_soni = sahifa_soni
+#     def get_info(self):
+#         return f"Kitob nomi: {self.nomi}\nKitob muallifi: {self.muallifi}\nKitobning sahifalari soni: {self.sahifa_soni}"
+# kitob = Kitob("Al-karnaku kemasidagi qotillik","Agata Kristi",215)
+# print(kitob.get_info())
+
+# 14
+# class Kutubxona:
+#     def __init__(self,kutubxona_nomi):
+#         self.nomi = kutubxona_nomi
+#         self.kitoblar = []
+#     def add_book(self,kitob):
+#         self.kitob = kitob
+#         if self.kitob not in self.kitoblar:
+#             self.kitoblar.append(kitob)
+#     def get_info(self):
+#         self.matn = "\n".join(self.kitoblar)
+#         return f"{self.nomi} kutubxonasidagi kitoblar:\n{self.matn}"
+# kutubxona = Kutubxona("Alisher Navoiy")
+# kutubxona.add_book("O'n besh yoshli kapitan")
+# kutubxona.add_book("Sariq devni minib")
+# kutubxona.add_book("Odam bo'lish qiyin")
+# kutubxona.add_book("O'tkan kunlar")
+# print(kutubxona.get_info())
+
+# 15
+class 
