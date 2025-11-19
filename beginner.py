@@ -281,5 +281,34 @@
 # kutubxona.add_book("O'tkan kunlar")
 # print(kutubxona.get_info())
 
-# 15
-class 
+# 17
+# class Uy:
+#     def __init__(self,manzil,xonalar):
+#         self.manzil = manzil
+#         self.xona = xonalar
+#     def get_info(self):
+#         return f"Uyning manzili: {self.manzil}\nUydagi xonalar soni: {self.xona}"
+# uy = Uy("5dom",3)
+# print(uy.get_info())
+
+# 19
+# class Sportchi:
+#     def __init__(self,ism,sport,natija):
+#         self.ism = ism
+#         self.sport = sport
+#         self.natija = natija
+#     def get_info(self):
+#         return f"Sportchi haqida ma'lumot:\nIsmi: {self.ism}\nSport turi: {self.sport}\nNatijasi: {self.natija}"
+# sportchi = Sportchi("hgde","jwhf","ghuj")
+# print(sportchi.get_info())
+
+# 22
+# class Kino:
+#     def __init__(self,nom,janr,davomiylik):
+#         self.nom = nom
+#         self.janr = janr
+#         self.davomiylik = davomiylik
+#     def get_info(self):
+#         return f"Film nomi: {self.nom}\nJanri: {self.janr}\nDavomiyligi: {self.davomiylik}"
+# kino = Kino("Shavqat qilinmaydi","kriminal","1soat")
+# print(kino.get_info())
