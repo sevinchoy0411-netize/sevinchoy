@@ -41,6 +41,7 @@
 # talaba1 = Talaba("Ulug'bek",2007,"Al-Xorazmiy","sun'iy intelekt")
 # print(talaba1.get_info())
 
+
 # 1
 # class Student:
 #     def __init__(self,ism,yosh,baho):
@@ -51,6 +52,7 @@
 #         return f"Studentning ismi: {self.name}\nTalabaning  yoshi: {self.age}\nTalabaning bahosi: {self.grade}"
 # student1 = Student("Ulug'bek",20,5)
 # print(student1.info())
+
 
 # 2
 # class Avto:
@@ -63,6 +65,7 @@
 # mashina = Avto("Tracker2",2025,"Qora")
 # print(mashina.car())
 
+
 # 3
 # class Bankhisob:
 #     def __init__(self,balans):
@@ -73,6 +76,7 @@
 #         return f"balansingizda {self.hisob} pul bor edi {self.hisob-summa} qoldi"
 # user1 = Bankhisob(5000000)
 # print(user1.add_money(500000))
+
 
 # 4
 # class Dokon:
@@ -102,6 +106,7 @@
 # dokon.change_product("anor","behi")
 # dokon.change_product("uzum" , "shaftoli")
 # print(dokon.get_info())
+
 
 # 5
 # class Kompaniya:
@@ -134,6 +139,7 @@
 # kompaniya.change_worker("ben","rayhona")
 # print(kompaniya.get_info())
 
+
 # 6
 # class Mashina:
 #     def __init__(self, model, speed):
@@ -153,6 +159,7 @@
 # mashina = Mashina("Tesla", 90)
 # print(mashina.speed_up())
 
+
 # 7
 # class Telefon:
 #     def __init__(self,nom,brend,batareya):
@@ -167,6 +174,7 @@
 # tel = Telefon("iPhone 17","Apple",90)
 # print(tel.charge())
 
+
 # 8
 # class Oqituvchi:
 #     def __init__(self,name,subject,experiment):
@@ -178,6 +186,7 @@
 # ustoz = Oqituvchi("Mirzabek","Dasturlash","4yil")
 # print(ustoz.get_info())
 
+
 # 9
 # class Kompyuter:
 #     def __init__(self,ram,hdd,cpu):
@@ -188,6 +197,7 @@
 #         return f"Kompyuterning RAMi: {self.ram}\nKompyuterning xotirasi: {self.hdd}\nKompyuterning CPUsi: {self.cpu}"
 # kompyuter = Kompyuter("8GB DDR4 2666MHz Kingston","Seagate Barracuda 1TB HDD","Intel Core i5-10400F")
 # print(kompyuter.get_info())
+
 
 # 10
 # class Sinf:
@@ -216,6 +226,7 @@
 # pupil.add_pupil("marjona")
 # print(pupil.get_info())
 
+
 # 11
 # class Shaxs:
 #     def __init__(self,ism,yosh):
@@ -225,6 +236,7 @@
 #         return f"Mening ismim {self.ism} yoshim {self.yosh}"
 # shaxs = Shaxs("sevinchoy",14)
 # print(shaxs.tanishuv())
+
 
 # 12
 # class Maktab:
@@ -251,6 +263,7 @@
 # maktab.add_class("8-A")
 # print(maktab.get_info())
 
+
 # 13
 # class Kitob:
 #     def __init__(self,nomi,muallifi,sahifa_soni):
@@ -261,6 +274,7 @@
 #         return f"Kitob nomi: {self.nomi}\nKitob muallifi: {self.muallifi}\nKitobning sahifalari soni: {self.sahifa_soni}"
 # kitob = Kitob("Al-karnaku kemasidagi qotillik","Agata Kristi",215)
 # print(kitob.get_info())
+
 
 # 14
 # class Kutubxona:
@@ -281,6 +295,47 @@
 # kutubxona.add_book("O'tkan kunlar")
 # print(kutubxona.get_info())
 
+
+# 15
+# class Mahsulot:
+#     def __init__(self,mahsulot_nomi):
+#         self.product = mahsulot_nomi
+#     def get_info(self):
+#         return f"{self.product}"
+
+# class Dokon:
+#     def __init__(self,dokon_nomi):
+#         self.market_name = dokon_nomi
+#         self.mahsulot = []
+#         self.son = 0
+#     def add_product(self,mahsulot_nomi):
+#         narsa = Mahsulot(mahsulot_nomi)
+#         self.mahsulot.append(narsa)
+#         self.son += 1
+#     def get_product(self):
+#         malumot = "\n".join([product.get_info() for product in self.mahsulot])
+#         return f"{self.market_name} dokonida {self.son} ta mahsulot bor ular: \n{malumot}"
+
+# dokon = Dokon("magnit")
+# dokon.add_product("olma")
+# dokon.add_product("anor")
+# dokon.add_product("nok")
+# print(dokon.get_product())
+
+
+# 16
+# class Hayvon:
+#     def __init__(self,ismi,turi):
+#         self.name = ismi
+#         self.kind = turi
+#     def ovoz_chiqar(self):
+#         if self.name == "mushuk":
+#             return "Miyov-miyov"
+#         elif self.name == "it":
+#             return "Vov-vov"
+# hayvon = Hayvon("mushuk","mushuk")
+# print(hayvon.ovoz_chiqar())
+
 # 17
 # class Uy:
 #     def __init__(self,manzil,xonalar):
@@ -290,6 +345,34 @@
 #         return f"Uyning manzili: {self.manzil}\nUydagi xonalar soni: {self.xona}"
 # uy = Uy("5dom",3)
 # print(uy.get_info())
+
+
+# 18
+# class Shaxs:
+#     def __init__(self,ismi,yoshi):
+#         self.name = ismi
+#         self.age = yoshi
+#     def get_info(self):
+#         return f"Ismi: {self.name} yoshi: {self.age}"
+
+# class Oila:
+#     def __init__(self,oila_nomi):
+#         self.family_name = oila_nomi
+#         self.odam = []
+#         self.soni = 0
+#     def add_member(self,ismi,yoshi):
+#         member = Shaxs(ismi,yoshi)
+#         self.odam.append(member)
+#         self.soni += 1
+#     def get_member(self):
+#         data = "\n".join([shaxs.get_info() for shaxs in self.odam])
+#         return f"{self.family_name} oilasida {self.soni} ta odam bor ular: \n{data}"
+# oila = Oila("kimdir")
+# oila.add_member("Sevinchoy",14)
+# oila.add_member("Zuhra",10)
+# oila.add_member("Tohirjon",1)
+# print(oila.get_member())
+
 
 # 19
 # class Sportchi:
@@ -302,6 +385,34 @@
 # sportchi = Sportchi("hgde","jwhf","ghuj")
 # print(sportchi.get_info())
 
+
+# 20
+# class Sportchi:
+#     def __init__(self,ism,sport,natija):
+#         self.ism = ism
+#         self.sport = sport
+#         self.natija = natija
+#     def get_info(self):
+#         return f"Ismi: {self.ism} sport turi: {self.sport} natijasi: {self.natija}"
+# class Stadion:
+#     def __init__(self,stadion_nomi):
+#         self.nomi = stadion_nomi
+#         self.sportchilar = []
+#         self.soni = 0
+#     def add_athlet(self,ism,sport,natija):
+#         athlet = Sportchi(ism,sport,natija)
+#         self.sportchilar.append(athlet)
+#         self.soni += 1
+#     def get_athlet(self):
+#         data = "\n".join([athlet.get_info() for athlet in self.sportchilar])
+#         return f"{self.nomi} stadionida {self.soni} ta sportchi bor va ular: \n{data}"
+# stadion = Stadion("nimadir")
+# stadion.add_athlet("hgde","jwhf","ghuj")
+# stadion.add_athlet("hgde","jwhf","ghuj")
+# stadion.add_athlet("hgde","jwhf","ghuj")
+# print(stadion.get_athlet())
+
+
 # 22
 # class Kino:
 #     def __init__(self,nom,janr,davomiylik):
@@ -312,3 +423,34 @@
 #         return f"Film nomi: {self.nom}\nJanri: {self.janr}\nDavomiyligi: {self.davomiylik}"
 # kino = Kino("Shavqat qilinmaydi","kriminal","1soat")
 # print(kino.get_info())
+
+
+
+# class Talaba:
+#     def __init__(self,talaba_ismi,talaba_sinfi,talaba_yoshi):
+#         self.name = talaba_ismi
+#         self.sinf = talaba_sinfi
+#         self.age = talaba_yoshi
+    
+#     def get_info(self):
+#         return f"Talabaning ismi: {self.name} , Talaba sinfi: {self.sinf} , talaba yoshi : {self.age}"
+
+# class Maktab:
+#     def __init__(self,maktab_nomi):
+#         self.school_name = maktab_nomi
+#         self.oquvchilar = []
+#         self.oquvchi_soni = 0
+
+#     def add_student(self,talaba_ismi,talaba_sinfi,talaba_yoshi):
+#         student = Talaba(talaba_ismi,talaba_sinfi,talaba_yoshi)
+#         self.oquvchilar.append(student)
+#         self.oquvchi_soni +=1
+#     def get_student(self):
+#         malumot = "\n".join([talaba.get_info() for talaba in self.oquvchilar])
+#         return f"{self.school_name} maktabida {self.oquvchi_soni} ta o'quvchi bor va ular ro'yhati quyidagicha:\n{malumot}"
+    
+# maktab_6 = Maktab("6-son maktab")
+
+# maktab_6.add_student("Sevinchoy" , "8-A" , "14")
+# maktab_6.add_student("Zoxira" , "9-B",15)
+# print(maktab_6.get_student())
