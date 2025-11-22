@@ -413,6 +413,35 @@
 # print(stadion.get_athlet())
 
 
+# class Ishchi:
+#     def __init__(self,ismi,yoshi,vazifasi):
+#         self.ism = ismi
+#         self.yosh = yoshi
+#         self.vazifa = vazifasi
+#     def get_info(self):
+#         return f"Ismi: {self.ism} yoshi: {self.yosh} vazifasi: {self.vazifa}"
+
+# class Kompaniya:
+#     def __init__(self,kompaniya_nomi):
+#         self.nomi = kompaniya_nomi
+#         self.workers = []
+#         self.soni = 0
+#     def add_worker(self,ismi,yoshi,vazifasi):
+#         worker = Ishchi(ismi,yoshi,vazifasi)
+#         self.workers.append(worker)
+#         self.soni += 1
+#     def get_worker(self):
+#         data = "\n".join([ishchi.get_info() for ishchi in self.workers])
+#         return f"{self.nomi} kompaniyasida {self.soni} ta ishchi bor ular: \n{data}"
+# kompaniya = Kompaniya("CyberNest")
+# kompaniya.add_worker("jorj",15,"dasturchi")
+# kompaniya.add_worker("tom",16,"kiberxavfsizlik xodimi")
+# kompaniya.add_worker("jasica",17,"developer")
+# kompaniya.add_worker("sevinchoy",14,"kiberxavfsizlik hodimi,dasturchi")
+# kompaniya.add_worker("ben",15,"dasturchi")
+# print(kompaniya.get_worker())
+
+
 # 22
 # class Kino:
 #     def __init__(self,nom,janr,davomiylik):
