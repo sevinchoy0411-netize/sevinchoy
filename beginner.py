@@ -454,13 +454,38 @@
 # print(kino.get_info())
 
 
+# 23
+# class Kino:
+#     def __init__(self,nomi,janr,during):
+#         self.nom = nomi
+#         self.janr = janr
+#         self.during = during
+#     def get_info(self):
+#         return f"Nomi: {self.nom} janri: {self.janr} davomiyligi: {self.during}"
+
+# class Kinoteatr:
+#     def __init__(self,kinoteatr_nomi):
+#         self.name = kinoteatr_nomi
+#         self.kino = []
+#     def add_film(self,nomi,janr,during):
+#         film = Kino(nomi,janr,during)
+#         self.kino.append(film)
+#     def get_film(self):
+#         matnga = "\n".join([film.get_info() for film in self.kino])
+#         return f"{self.name} kinoteatridagi filmlar: \n{matnga}"
+# kinoteatr = Kinoteatr("Alisher Navoiy")
+# kinoteatr.add_film("shafqat qilinmaydi","kriminal","1soat")
+# kinoteatr.add_film("qotil","kriminal","2soat")
+# kinoteatr.add_film("o'zganing qasosi","kriminal","2soat")
+# kinoteatr.add_film("dozaxdan kelgan sudiya","qorqinchli","3soat")
+# print(kinoteatr.get_film())
+
 
 # class Talaba:
 #     def __init__(self,talaba_ismi,talaba_sinfi,talaba_yoshi):
 #         self.name = talaba_ismi
 #         self.sinf = talaba_sinfi
 #         self.age = talaba_yoshi
-    
 #     def get_info(self):
 #         return f"Talabaning ismi: {self.name} , Talaba sinfi: {self.sinf} , talaba yoshi : {self.age}"
 
@@ -469,7 +494,6 @@
 #         self.school_name = maktab_nomi
 #         self.oquvchilar = []
 #         self.oquvchi_soni = 0
-
 #     def add_student(self,talaba_ismi,talaba_sinfi,talaba_yoshi):
 #         student = Talaba(talaba_ismi,talaba_sinfi,talaba_yoshi)
 #         self.oquvchilar.append(student)
@@ -477,9 +501,7 @@
 #     def get_student(self):
 #         malumot = "\n".join([talaba.get_info() for talaba in self.oquvchilar])
 #         return f"{self.school_name} maktabida {self.oquvchi_soni} ta o'quvchi bor va ular ro'yhati quyidagicha:\n{malumot}"
-    
 # maktab_6 = Maktab("6-son maktab")
-
 # maktab_6.add_student("Sevinchoy" , "8-A" , "14")
 # maktab_6.add_student("Zoxira" , "9-B",15)
 # print(maktab_6.get_student())
