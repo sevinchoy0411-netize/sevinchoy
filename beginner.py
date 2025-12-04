@@ -505,3 +505,57 @@
 # maktab_6.add_student("Sevinchoy" , "8-A" , "14")
 # maktab_6.add_student("Zoxira" , "9-B",15)
 # print(maktab_6.get_student())
+
+# 24
+# class Oqituvchi:
+#     def __init__(self,ismi,yoshi,fani):
+#         self.name = ismi
+#         self.age = yoshi
+#         self.subject = fani
+#     def get_info(self):
+#         return f"O'qituvchi ismi: {self.name} , O'qituvchining yoshi: {self.age} , O'qituvchi yo'nalishi: {self.subject}"
+# class Maktab:
+#     def __init__(self,maktab_nomi):
+#         self.number = maktab_nomi
+#         self.oqituvchi = []
+#         self.soni = 0
+#     def add_teacher(self,ismi,yoshi,fani):
+#         teacher = Oqituvchi(ismi,yoshi,fani)
+#         self.oqituvchi.append(teacher)
+#         self.soni += 1
+#     def get_tecacher(self):
+#         malumot = "\n".join([teacher.get_info() for teacher in self.oqituvchi])
+#         return f"{self.number} maktabida {self.soni} ta o'qituvchi bor va ular: \n{malumot}"
+# maktab = Maktab("6-son maktab")
+# maktab.add_teacher("Barno","30","ingliz tili")
+# maktab.add_teacher("Shohista","30","ingliz tili")
+# print(maktab.get_tecacher())
+
+
+# 25
+# class Fakultet:
+#     def __init__(self,fakultet_nomi):
+#         self.name = fakultet_nomi
+#     def get_info(self):
+#         return f"fakultet nomi: {self.name}"
+# class Universitet:
+#     def __init__(self,univer_nomi):
+#         self.ism = univer_nomi
+#         self.facultet = []
+#         self.number = 0
+#     def add_facultet(self,fakultet_nomi):
+#         fakultet = Fakultet(fakultet_nomi)
+#         self.facultet.append(fakultet)
+#         self.number += 1
+#     def get_facultet(self):
+#         data = "\n".join([i.get_info() for i in self.facultet])
+#         return f"{self.ism} universitetida {self.number} ta fakultet bor va ular: \n{data}"
+# univer = Universitet("al-Xorazmiy")
+# univer.add_facultet("cybersecurity")
+# univer.add_facultet("texnika va IT yo'nalishlari")
+# univer.add_facultet("axborot texnologiyalari")
+# univer.add_facultet("filologiya")
+# print(univer.get_facultet())
+
+
+# 26
