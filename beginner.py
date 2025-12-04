@@ -559,3 +559,26 @@
 
 
 # 26
+# class Avto:
+#     def __init__(self,nomi,yili,rangi):
+#         self.nomi = nomi
+#         self.yili = yili
+#         self.rang = rangi
+#     def get_info(self):
+#         return f"Avto nomi: {self.nomi} , yili: {self.yili} , rangi: {self.rang}"
+# class Avtosalon:
+#     def __init__(self,avtosalon_nomi):
+#         self.name = avtosalon_nomi
+#         self.mashina = []
+#         self.soni = 0
+#     def add_avto(self,nomi,yili,rangi):
+#         avto = Avto(nomi,yili,rangi)
+#         self.mashina.append(avto)
+#         self.soni += 1
+#     def get_avto(self):
+#         data = "\n".join([i.get_info() for i in self.mashina])
+#         return f"{self.name} avtosalonida {self.soni} ta moshina bor va ular: \n{data}"
+# avto = Avtosalon("novidir")
+# avto.add_avto("nexia3","2020","oq")
+# avto.add_avto("tracker","2024","qora")
+# print(avto.get_avto())
