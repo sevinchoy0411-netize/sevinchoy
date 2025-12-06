@@ -582,3 +582,121 @@
 # avto.add_avto("nexia3","2020","oq")
 # avto.add_avto("tracker","2024","qora")
 # print(avto.get_avto())
+
+
+# 27
+# class Shifokor:
+#     def __init__(self,ism,yosh,yonalish):
+#         self.name = ism
+#         self.age = yosh
+#         self.megar = yonalish
+#     def get_info(self):
+#         return f"Ismi: {self.name}, yoshi: {self.age}, yo'nalishi: {self.megar}"
+# class Kasalxona:
+#     def __init__(self,kasalxona_nomi):
+#         self.hospital = kasalxona_nomi
+#         self.doctor = []
+#         self.soni = 0
+#     def add_doctor(self,ism,yosh,yonalish):
+#         doctor = Shifokor(ism,yosh,yonalish)
+#         self.doctor.append(doctor)
+#         self.soni += 1
+#     def get_doctor(self):
+#         data = "\n".join([i.get_info() for i in self.doctor])
+#         return f"{self.hospital} shifoxonasida {self.soni}ta shifokor bor va ular: \n{data}"
+# kasalxona = Kasalxona("novidir")
+# kasalxona.add_doctor("gjd","jgd","hye")
+# kasalxona.add_doctor("sh","ygd","hdu")
+# kasalxona.add_doctor("sg","hsiu","hd")
+# print(kasalxona.get_doctor())
+
+
+# 28
+# class Oyinchi:
+#     def __init__(self,ism,level,ball):
+#         self.name = ism
+#         self.level = level
+#         self.ball = ball
+#     def get_info(self):
+#         return f"O'yinchining ismi: {self.name}\nLeveli: {self.level}\nBalli: {self.ball}"
+# oyin = Oyinchi("kimdir","nimadir","nechadir")
+# print(oyin.get_info())
+
+
+# 29
+# class Oyinchi:
+#     def __init__(self,ism,level,ball):
+#         self.name = ism
+#         self.level = level
+#         self.ball = ball
+#     def get_info(self):
+#         return f"O'yinchining ismi: {self.name}\nLeveli: {self.level}\nBalli: {self.ball}"
+# class Oyin:
+#     def __init__(self,oyin_nomi):
+#         self.game = oyin_nomi
+#         self.oyinchilar = []
+#         self.soni = 0
+#     def add_player(self,ism,level,ball):
+#         player = Oyinchi(ism,level,ball)
+#         self.oyinchilar.append(player)
+#         self.soni += 1
+#     def get_player(self):
+#         data = "\n".join([i.get_info() for i in self.oyinchilar])
+#         return f"{self.game} o'yinida {self.soni}ta o'yinchi bor va ular: \n{data}"
+# oyin = Oyin("novidir")
+# oyin.add_player("kimdir","nimadir","nechadir")
+# print(oyin.get_player())
+
+
+# 30
+# class Taom:
+#     def __init__(self):
+#         self.meals = []
+#     def add_meal(self,new_meal):
+#         self.new = new_meal
+#         self.meals.append(self.new)
+#     def get_meal(self):
+#         data = "\n".join(self.meals)
+#         return f"Menyu: \n{data}"
+# menyu = Taom()
+# menyu.add_meal("shashlik")
+# menyu.add_meal("somsa")
+# menyu.add_meal("manti")
+# menyu.add_meal("palov")
+# print(menyu.get_meal())
+
+# 31
+# class Taom:
+#     def __init__(self,nom,narx,kaloriya):
+#         self.name = nom
+#         self.cost = narx
+#         self.caloriya = kaloriya
+#     def get_info(self):
+#         return f"Nomi: {self.name}\nNarxi: {self.cost}\nKaloriyasi: {self.caloriya}"
+# taom = Taom("nimadir","hdyg","dgh")
+# print(taom.get_info())
+
+# 32
+# class Taom:
+#     def __init__(self,nomi,narxi,kaloriyasi):
+#         self.name = nomi
+#         self.cost = narxi
+#         self.caloriya = kaloriyasi
+#     def get_info(self):
+#         return f"Nomi: {self.name}, narxi: {self.cost}, kaloriyasi: {self.caloriya}"
+# class Restoran:
+#     def __init__(self,nomi):
+#         self.ism = nomi
+#         self.menyu = []
+#     def add_meal(self,nomi,narxi,kaloriya):
+#         meal = Taom(nomi,narxi,kaloriya)
+#         self.menyu.append(meal)
+#     def get_meal(self):
+#         data = "\n".join([i.get_info() for i in self.menyu])
+#         return f"{self.ism} restoranidagi taomlar menyusi: \n{data}"
+# taom = Restoran("gff")
+# taom.add_meal("ds","lgvifd","jgf")
+# taom.add_meal("fjs","ihf","ugdh")
+# taom.add_meal("jdbn","jds","jhu")
+# taom.add_meal("jdb","ygdhs","hd")
+# print(taom.get_meal())
