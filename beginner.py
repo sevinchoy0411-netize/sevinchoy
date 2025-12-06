@@ -700,3 +700,82 @@
 # taom.add_meal("jdbn","jds","jhu")
 # taom.add_meal("jdb","ygdhs","hd")
 # print(taom.get_meal())
+
+# 33
+# class Kompyuter:
+#     def __init__(self,nomi):
+#         self.nomi = nomi
+#         self.dasturlar = []
+#     def add_software(self,new):
+#         self.new = new
+#         self.dasturlar.append(self.new)
+#     def get_software(self):
+#         software = "\n".join(self.dasturlar)
+#         return f"{self.nomi} kompyuteridagi dasturlar: \n{software}"
+# kompyuter = Kompyuter("hp")
+# kompyuter.add_software("Visual Studio Code")
+# kompyuter.add_software("python")
+# kompyuter.add_software("Google")
+# kompyuter.add_software("Word")
+# kompyuter.add_software("excel")
+# print(kompyuter.get_software())
+
+
+# 34
+# class Dastur:
+#     def __init__(self,nom,versiya,producer):
+#         self.nom = nom
+#         self.version = versiya
+#         self.producer = producer
+#     def get_info(self):
+#         return f"Nomi: {self.nom}\nVersiyasi: {self.version}\nIshlab chiqaruvchisi: {self.producer}"
+# dastur = Dastur("hf","hf","gfy")
+# print(dastur.get_info())
+
+
+# 35
+# class Bank:
+#     def __init__(self,banknomi):
+#         self.bank = banknomi
+#         self.mijozlar = []
+#     def mijoz_qoshish(self,mijoz):
+#         self.mijoz = mijoz
+#         self.mijozlar.append(self.mijoz)
+#     def get_info(self):
+#         data = "\n".join(self.mijozlar)
+#         return f"{self.bank} bankidagi mijozlar: \n{data}"
+# bank = Bank("XalqBanki")
+# bank.mijoz_qoshish("shg")
+# bank.mijoz_qoshish("fd")
+# bank.mijoz_qoshish("hghb")
+# print(bank.get_info())
+
+
+# 36
+# class Mijoz:
+#     def __init__(self,ism,balans):
+#         self.ism = ism
+#         self.balans = balans
+#     def get_info(self):
+#         return f"Ismi: {self.ism}\nBalansi: {self.balans}"
+# mijoz = Mijoz("dh","hdg")
+# print(mijoz.get_info())
+
+
+# 37
+class Sinf:
+    def __init__(self,sinf):
+        self.sinf = sinf
+        self.fan = []
+    def add_subject(self,fan):
+        self.subject = fan
+        self.fan.append(self.subject)
+    def get_subject(self):
+        data = "\n".join(self.fan)
+        return f"{self.sinf} sinfida o'tiluvchi fanlar: \n{data}"
+sinf = Sinf("hs")
+sinf.add_subject("gfa")
+sinf.add_subject("fygh")
+sinf.add_subject("fgsf")
+sinf.add_subject("hgfs")
+print(sinf.get_subject())
