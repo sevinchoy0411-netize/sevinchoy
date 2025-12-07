@@ -763,19 +763,59 @@
 
 
 # 37
-class Sinf:
-    def __init__(self,sinf):
-        self.sinf = sinf
-        self.fan = []
-    def add_subject(self,fan):
-        self.subject = fan
-        self.fan.append(self.subject)
-    def get_subject(self):
-        data = "\n".join(self.fan)
-        return f"{self.sinf} sinfida o'tiluvchi fanlar: \n{data}"
-sinf = Sinf("hs")
-sinf.add_subject("gfa")
-sinf.add_subject("fygh")
-sinf.add_subject("fgsf")
-sinf.add_subject("hgfs")
-print(sinf.get_subject())
+# class Sinf:
+#     def __init__(self,sinf):
+#         self.sinf = sinf
+#         self.fan = []
+#     def add_subject(self,fan):
+#         self.subject = fan
+#         self.fan.append(self.subject)
+#     def get_subject(self):
+#         data = "\n".join(self.fan)
+#         return f"{self.sinf} sinfida o'tiluvchi fanlar: \n{data}"
+# sinf = Sinf("hs")
+# sinf.add_subject("gfa")
+# sinf.add_subject("fygh")
+# sinf.add_subject("fgsf")
+# sinf.add_subject("hgfs")
+# print(sinf.get_subject())
+
+
+# 38
+# class Fan:
+#     def __init__(self,nom,teacher):
+#         self.name = nom
+#         self.teacher = teacher
+#     def get_info(self):
+#         return f"Nomi: {self.name}\nO'qituvchisi: {self.teacher}"
+# fan = Fan("IT","Mirzabek")
+# print(fan.get_info())
+
+
+# 39
+# class Institut:
+#     def __init__(self,institut_nomi):
+#         self.name = institut_nomi
+#         self.student = []
+#         self.teacher = []
+#     def add_student(self,new_student):
+#         self.talaba = new_student
+#         self.student.append(self.talaba)
+#     def add_teacher(self,new_teacher):
+#         self.new = new_teacher
+#         self.teacher.append(self.new)
+#     def get_student(self):
+#         talabalar = "\n".join(self.student)
+#         return f"{self.name} institutidagi talabalar: \n{talabalar}"
+#     def get_teacher(self):
+#         teachers = "\n".join(self.teacher)
+#         return f"{self.name} institutidagi o'qituvchilar: \n{teachers}"
+#     def get_info(self):
+#         talabalar = "\n".join(self.student)
+#         teachers = "\n".join(self.teacher)
+#         return f"{self.name} institutidagi talabalar: \n{talabalar}\nO'qituvchilar: \n{teachers}"
+# univer = Institut("al-Xorazmiy")
+# univer.add_student("Sevinchoy")
+# univer.add_student("Rayhona")
+# univer.add_teacher("Mirzabek")
+# print(univer.get_info())
