@@ -819,3 +819,59 @@
 # univer.add_student("Rayhona")
 # univer.add_teacher("Mirzabek")
 # print(univer.get_info())
+
+
+# 40
+# class Market:
+#     def __init__(self,dokon_nomi):
+#         self.name = dokon_nomi
+#         self.mijozlar = []
+#         self.mahsulot = []
+#     def add_mijoz(self,mijoz):
+#         self.mijoz = mijoz
+#         self.mijozlar.append(self.mijoz)
+#     def add_product(self,product):
+#         self.product = product
+#         self.mahsulot.append(self.product)
+#     def get_mijoz(self):
+#         mijoz = "\n".join(self.mijozlar)
+#         return f"Mijozlar: \n{mijoz}"
+#     def get_product(self):
+#         product = "\n".join(self.mahsulot)
+#         return f"{self.name} do'konida bor mahsulotlar: \n{product}"
+# market = Market("Xalomaxon")
+# market.add_product("olma")
+# market.add_product("anor")
+# market.add_product("non")
+# market.add_product("go'sht")
+# print(market.get_product())
+
+
+# 41
+# class Teatr:
+#     def __init__(self,teatr_nomi):
+#         self.teatr = teatr_nomi
+#         self.spektakl = []
+#     def add_spektakl(self,spektakl):
+#         self.spektakl.append(spektakl)
+#     def get_spektakl(self):
+#         data = "\n".join(self.spektakl)
+#         return f"{self.teatr} teatrida bo'ladigan spektakllar: \n{data}"
+# teatr = Teatr("htr")
+# teatr.add_spektakl("hgfd")
+# teatr.add_spektakl("kgjd")
+# teatr.add_spektakl("fh")
+# teatr.add_spektakl("hg")
+# print(teatr.get_spektakl())
+
+
+# 42
+# class Spektakl: 
+#     def __init__(self,nom,muallif,vaqt):
+#         self.nom = nom
+#         self.muallif = muallif
+#         self.vaqt = vaqt
+#     def get_spektakl(self):
+#         return f"Nomi: {self.nom}\nMuallifi: {self.muallif}\nVaqti: {self.vaqt}"
+# spektakl = Spektakl("gjh","ghc","fgvy")
+# print(spektakl.get_spektakl())
