@@ -111,3 +111,15 @@
 
 # with open("test.txt","a") as a:
 #     a.write("\nYangi qator")
+
+# with open("sevinchoy/matn.txt","x") as f:
+#     print(f)
+
+# with open("sevinchoy/matn.txt","w") as w:
+#     w.write("salom hammaga")
+
+# with open("sevinchoy/matn.txt","a") as a:
+#     a.write("\nYangi qator")
+
+# with open("sevinchoy/matn.txt","r") as r:
+#     print(r.read())
