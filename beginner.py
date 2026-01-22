@@ -98,7 +98,6 @@
 #     def get_info(self):
 #         matn = "\n".join([name for name in self.mahsulot])
 #         return f"{self.dokon} dokonida {self.soni}ta mahsulot bor va ular:\n{matn}"
-    
 # dokon = Dokon("magnit")
 # dokon.add_product("olma")
 # dokon.add_product("uzum")
@@ -128,15 +127,14 @@
 #     def get_info(self):
 #         matn = "\n".join([name for name in self.ishchilar])
 #         return f"{self.kompaniya} kompaniyasida {self.soni}ta ishchi bor va ular: \n{matn}"
-
 # kompaniya = Kompaniya("CyberNest")
 # kompaniya.add_worker("jorj")
 # kompaniya.add_worker("tom")
 # kompaniya.add_worker("jasica")
 # kompaniya.add_worker("sevinchoy")
-# kompaniya.add_worker("ben")
+# kompaniya.add_worker("anna")
 # kompaniya.remove_worker("jorj")
-# kompaniya.change_worker("ben","rayhona")
+# kompaniya.change_worker("anna","ben")
 # print(kompaniya.get_info())
 
 
@@ -252,7 +250,7 @@
 #     def get_info(self):
 #         self.matn = "\n".join(self.sinflar)
 #         return f"{self.maktab} - maktabda {self.soni}ta sinf bor va ular:\n{self.matn}"
-# maktab = Maktab(6)
+# maktab = Maktab(11)
 # maktab.add_class("1-A")
 # maktab.add_class("2-A")
 # maktab.add_class("3-A")
@@ -315,7 +313,6 @@
 #     def get_product(self):
 #         malumot = "\n".join([product.get_info() for product in self.mahsulot])
 #         return f"{self.market_name} dokonida {self.son} ta mahsulot bor ular: \n{malumot}"
-
 # dokon = Dokon("magnit")
 # dokon.add_product("olma")
 # dokon.add_product("anor")
@@ -476,8 +473,8 @@
 # kinoteatr = Kinoteatr("Alisher Navoiy")
 # kinoteatr.add_film("shafqat qilinmaydi","kriminal","1soat")
 # kinoteatr.add_film("qotil","kriminal","2soat")
-# kinoteatr.add_film("o'zganing qasosi","kriminal","2soat")
-# kinoteatr.add_film("dozaxdan kelgan sudiya","qorqinchli","3soat")
+# kinoteatr.add_film("o'zganing qasosi","maktab","2soat")
+# kinoteatr.add_film("dozaxdan kelgan sudiya","fantastika","3soat")
 # print(kinoteatr.get_film())
 
 
@@ -503,7 +500,7 @@
 #         return f"{self.school_name} maktabida {self.oquvchi_soni} ta o'quvchi bor va ular ro'yhati quyidagicha:\n{malumot}"
 # maktab_6 = Maktab("6-son maktab")
 # maktab_6.add_student("Sevinchoy" , "8-A" , "14")
-# maktab_6.add_student("Zoxira" , "9-B",15)
+# maktab_6.add_student("zuhra" , "4-B",10)
 # print(maktab_6.get_student())
 
 # 24
@@ -875,3 +872,51 @@
 #         return f"Nomi: {self.nom}\nMuallifi: {self.muallif}\nVaqti: {self.vaqt}"
 # spektakl = Spektakl("gjh","ghc","fgvy")
 # print(spektakl.get_spektakl())
+
+
+# 43
+# class Qishloq:
+#     def __init__(self,qishloq_nomi):
+#         self.qishloq = qishloq_nomi
+#         self.uylar = []
+#     def add_home(self,home_adress):
+#         self.uylar.append(home_adress)
+#     def get_home(self):
+#         data = "\n".join(self.uylar)
+#         return f"{self.qishloq} qishlogidagi uylar: \n{data}"
+# obod = Qishloq("obod")
+# obod.add_home("ghfrij")
+# obod.add_home("gfh")
+# obod.add_home("fhuj")
+# obod.add_home("jgfh")
+# print(obod.get_home())
+
+
+# 44
+# class Bankomat:
+#     def __init__(self,balans):
+#         self.balans = balans
+#     def get_balans(self):
+#         return f"Balansi: {self.balans}"
+#     def get_money(self,value):
+#         self.balans = self.balans - value
+# karta = Bankomat(9000000)
+# print(karta.get_balans())
+
+
+# 45
+# class KitobDokoni:
+#     def __init__(self,kitob_dokon):
+#         self.dokon = kitob_dokon
+#         self.books = []
+#     def add_books(self,book):
+#         self.books.append(book)
+#     def get_books(self):
+#         books = "\n".join(self.books)
+#         return f"{self.dokon} kitob do'konidagi kitoblar: \n{books}"
+# nurabooks = KitobDokoni("NuraBooks")
+# nurabooks.add_books("1984")
+# nurabooks.add_books("molxona")
+# nurabooks.add_books("qo'zichoqlar sukunati")
+# nurabooks.add_books("yashamoq")
+# print(nurabooks.get_books())
