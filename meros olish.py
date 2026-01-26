@@ -120,21 +120,320 @@
 
 
 # 5
-class Talaba:
-    def __init__(self,yoshi,ismi):
-        self.yoshi = yoshi
-        self.ismi = ismi
-    def get_info(self):
-        return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}"
-class Bakalavr(Talaba):
-    def __init__(self, yoshi, ismi,maktab_baholari):
-        super().__init__(yoshi, ismi)
-        self.baho = maktab_baholari
-    def get_data(self):
-        return f"{self.get_info()}\nMaktab baholari: {self.baho}"
-class Magistr(Talaba):
-    def __init__(self, yoshi, ismi,bakalavr_bahosi):
-        super().__init__(yoshi, ismi)
-        self.bakalavr = bakalavr_bahosi
-    def get_data(self):
-        return f"{self.get_info()}"
+# class Talaba:
+#     def __init__(self,yoshi,ismi):
+#         self.yoshi = yoshi
+#         self.ismi = ismi
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}"
+# class Bakalavr(Talaba):
+#     def __init__(self, yoshi, ismi,maktab_baholari):
+#         super().__init__(yoshi, ismi)
+#         self.baho = maktab_baholari
+#     def get_data(self):
+#         return f"{self.get_info()}\nMaktab baholari: {self.baho}"
+# class Magistr(Talaba):
+#     def __init__(self, yoshi, ismi,bakalavr_bahosi):
+#         super().__init__(yoshi, ismi)
+#         self.bakalavr = bakalavr_bahosi
+#     def get_data(self):
+#         return f"{self.get_info()}\n Bakalavr bahosi: {self.bakalavr}"
+
+
+# 6
+# class Ustoz:
+#     def __init__(self,ismi,yoshi,fani):
+#         self.ismi = ismi
+#         self.yoshi = yoshi
+#         self.fan = fani
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}\nDars beradigan fani: {self.fan}"
+# class InformatikaUstozi(Ustoz):
+#     def __init__(self, ismi, yoshi, fani, dasturlash_tili,project):
+#         super().__init__(ismi, yoshi, fani)
+#         self.til = dasturlash_tili
+#         self.project = project
+#     def get_data(self):
+#         return f"{self.get_info()}\nBiladigan dasturlsh tillari: {self.til}\nIshtirok etgan va amalga oshirgan loyihalari: {self.project}"
+
+
+# 7
+# class Tech:
+#     def __init__(self,model,rangi):
+#         self.model = model
+#         self.rang = rangi
+#     def get_tech(self):
+#         return f"Modeli: {self.model}\nRangi: {self.rang}"
+# class Kompyuter(Tech):
+#     def __init__(self, model, rangi,xotirasi,ram):
+#         super().__init__(model, rangi)
+#         self.memory = xotirasi
+#         self.ram = ram
+#     def kompyuter_data(self):
+#         return f"{self.get_info()}\nXotirasi: {self.memory}\nRAMi: {self.ram}"
+
+
+# 9
+# class Shaxs:
+#     def __init__(self,ismi,yoshi,birth_day):
+#         self.ismi = ismi
+#         self.yoshi = yoshi
+#         self.birthday = birth_day
+#     def shaxs_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}\nTug'ilgan kuni: {self.birthday}"
+# class Oqituvchi(Shaxs):
+#     def __init__(self, ismi, yoshi, birth_day,fani):
+#         super().__init__(ismi, yoshi, birth_day)
+#         self.fan = fani
+#     def get_teacher(self):
+#         return f"{self.get_info()}\nDars beradigan fani: {self.fan}"
+
+
+# 10
+# class Mashina:
+#     def __init__(self,model,rang,uzatma,yoqilgi,dvigatel,yil):
+#         self.model = model
+#         self.rang = rang
+#         self.uzatma = uzatma
+#         self.yoqilgi = yoqilgi
+#         self.dvigatel = dvigatel
+#         self.yil = yil
+#     def get_car(self):
+#         return f"Modeli: {self.model}\nRangi: {self.rang}\nYili: {self.yil}\nDvigateli: {self.dvigatel}\nYoqilgisi: {self.yoqilgi}\nUzatma: {self.uzatma}"
+# class YukMashina(Mashina):
+#     def __init__(self, model, rang, uzatma, yoqilgi, dvigatel, yil,tonna):
+#         super().__init__(model, rang, uzatma, yoqilgi, dvigatel, yil,)
+#         self.tonna = tonna
+#     def yukmashina_info(self):
+#         return f"{self.get_info()}\nTonna: {self.tonna}"
+
+
+# 11
+# class Uchuvchi:
+#     def __init__(self,tajribasi,parvozlar_soni):
+#         self.tajriba = tajribasi
+#         self.soni = parvozlar_soni
+#     def pilot_info(self):
+#         return f"Tajribasi: {self.tajriba}\nParvozlar soni: {self.soni}"
+# class HarbiyUchuvchi(Uchuvchi):
+#     def __init__(self, tajribasi, parvozlar_soni,lavozimi):
+#         super().__init__(tajribasi, parvozlar_soni)
+#         self.lavozimi = lavozimi
+#     def data_pilot(self):
+#         return f"{self.get_info()}\nLavozimi: {self.lavozimi}"
+
+
+# 12
+# class Kitob:
+#     def __init__(self,varaq,janr):
+#         self.varaq = varaq
+#         self.janr = janr
+#     def get_book(self):
+#         return f"Janri: {self.janr}\nVaraqlar soni: {self.varaq}"
+# class Darslik(Kitob):
+#     def __init__(self, varaq, janr,fani):
+#         super().__init__(varaq, janr)
+#         self.fani = fani
+#     def darslik_info(self):
+#         return f"{self.get_info()}\nFani: {self.fani}"
+
+
+# 13
+# class Hayvon:
+#     def __init__(self,ismi,turi,jinsi):
+#         self.ismi = ismi
+#         self.turi = turi
+#         self.jinsi = jinsi
+#     def ovoz(self):
+#         if self.turi == "xo'roz":
+#             return "qu-qu-ri-qu"
+#         if self.turi == "o'rdak":
+#             return "g'aq-g'aq"
+# class It(Hayvon):
+#     def __init__(self, ismi, turi, jinsi):
+#         super().__init__(ismi, turi, jinsi)
+#     def ovoz(self):
+#         return "vov-vov"
+# class Mushuk(Hayvon):
+#     def __init__(self, ismi, turi, jinsi):
+#         super().__init__(ismi, turi, jinsi)
+#     def ovoz(self):
+#         return "miyov-miyov"
+
+
+# 14
+# class Qurilma:
+#     def __init__(self,nomi,kompaniya):
+#         self.nomi = nomi
+#         self.kompaniya = kompaniya
+#     def get_qurilma(self):
+#         return f"Qurilma nomi: {self.nomi}\nIshlab chiqargan kompaniyasi: {self.kompaniya}"
+# class Telefon(Qurilma):
+#     def __init__(self, nomi, kompaniya,rusumi,xotira):
+#         super().__init__(nomi, kompaniya)
+#         self.rusumi = rusumi
+#         self.xotira = xotira
+#     def get_phone(self):
+#         return f"{self.get_info()}\nTelefon rusumi: {self.rusumi}\nXotirasi: {self.xotira}"
+# class Noutbuk(Qurilma):
+#     def __init__(self, nomi, kompaniya,ddr,xotira,ram):
+#         super().__init__(nomi, kompaniya)
+#         self.ddr = ddr
+#         self.xotira = xotira
+#         self.ram = ram
+#     def get_noutbook(self):
+#         return f"{self.get_info()}\nXotirasi: {self.xotira}\nDDr'i: {self.ddr}\nRAM'i: {self.ram}"
+
+
+# 15
+# class Kompaniya:
+#     def __init__(self,kompaniya_nomi,vazifasi):
+#         self.nomi = kompaniya_nomi
+#         self.vazifa = vazifasi
+#     def get_company(self):
+#         return f"Kompaniya nomi: {self.nomi}\nIshlab chiqaradigan mahsuloti: {self.vazifa}"
+# class Ishchi(Kompaniya):
+#     def __init__(self, kompaniya_nomi, vazifasi, lavozimi):
+#         super().__init__(kompaniya_nomi, vazifasi)
+#         self.lavozimi = lavozimi
+#     def get_worker(self):
+#         return f"{self.get_info()}\nLavozimi: {self.lavozimi}"
+
+
+# 16
+# class Shaxs:
+#     def __init__(self,ismi,yoshi,sana):
+#         self.ism = ismi
+#         self.yoshi = yoshi
+#         self.sana = sana
+#     def about_shaxs(self):
+#         return f"Ismi: {self.ism}\nYoshi: {self.yoshi}\nTug'ilgan sanasi: {self.sana}"
+# class Oquvchi(Shaxs):
+#     def __init__(self, ismi, yoshi, sana,maktab,sinf):
+#         super().__init__(ismi, yoshi, sana)
+#         self.maktab = maktab
+#         self.sinf = sinf
+#     def about_oquvchi(self):
+#         return f"{self.about_shaxs()}\nMaktabi: {self.maktab}\nSinfi: {self.sinf}"
+
+
+# 17
+# class Transport:
+#     def __init__(self,nomi,sigimi,qatnov_usuli):
+#         self.nomi = nomi
+#         self.sigimi = sigimi
+#         self.qatnov = qatnov_usuli
+#     def get_transport(self):
+#         return f"Transport nomi: {self.nomi}\nTransport sig'imi: {self.sigimi}\nQatnov usuli: {self.qatnov}"
+# class Avtobus(Transport):
+#     def __init__(self, nomi, sigimi, qatnov_usuli, orindiq_soni):
+#         super().__init__(nomi, sigimi, qatnov_usuli)
+#         self.soni = orindiq_soni
+#     def get_avtobus(self):
+#         return f"{self.get_transport}\nAvtobusdagi o'rindiqlar soni: {self.soni}"
+# class Poyezd(Transport):
+#     def __init__(self, nomi, sigimi, qatnov_usuli,vagon_soni):
+#         super().__init__(nomi, sigimi, qatnov_usuli)
+#         self.vagon = vagon_soni
+#     def poyezd_info(self):
+#         return f"{self.get_transport()}\nPoyezddagi vagonlar soni: {self.vagon}"
+
+
+# 18
+# class Shaxs:
+#     def __init__(self,ismi,yoshi,birth_day):
+#         self.ismi = ismi
+#         self.yoshi = yoshi
+#         self.birthday = birth_day
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}\nTug'ilgan kuni: {self.birthday}"
+# class Talaba(Shaxs):
+#     def __init__(self, ismi, yoshi, birth_day,kurs):
+#         super().__init__(ismi, yoshi, birth_day)
+#         self.kurs = kurs
+#     def get_data(self):
+#         return f"{self.get_info()}\nO'qiyotgan kursi: {self.kurs}"
+
+
+# 19
+# class Mahsulot:
+#     def __init__(self,nomi,turi,narxi):
+#         self.nomi = nomi
+#         self.turi = turi
+#         self.narxi = narxi
+#     def about_product(self):
+#         return f"Mahsulot nomi: {self.nomi}\nMahsulot turi: {self.turi}\nMahsulot narxi: {self.narxi}"
+# class Meva(Mahsulot):
+#     def __init__(self, nomi, turi, narxi,kg):
+#         super().__init__(nomi, turi, narxi)
+#         self.kg = kg
+#     def fruit_data(self):
+#         return f"{self.about_product()}\nBundan {self.kg} bor"
+
+
+# 20
+# class Bino:
+#     def __init__(self,qavat_soni,maydoni):
+#         self.qavat = qavat_soni
+#         self.maydon = maydoni
+#     def get_building(self):
+#         return f"Qavatlar soni: {self.qavat}\nMaydoni: {self.maydon}"
+# class Uy(Bino):
+#     def __init__(self, qavat_soni, maydoni, xona_soni):
+#         super().__init__(qavat_soni, maydoni)
+#         self.xona = xona_soni
+#     def uy_info(self):
+#         return f"{self.get_building()}\nXonalar soni: {self.xona}"
+
+
+# 21
+# class Citizen:
+#     def __init__(self,yashash_joyi,ismi,kasbi,ish_joyi):
+#         self.manzil = yashash_joyi
+#         self.ismi = ismi
+#         self.kasb = kasbi
+#         self.ishjoyi = ish_joyi
+#     def get_citizen(self):
+#         return f"Ismi: {self.ismi}\nYashash joyi: {self.manzil}\nKasbi: {self.kasb}\nIsh joyi: {self.ishjoyi}"
+# class Person(Citizen):
+#     def __init__(self, yashash_joyi, ismi, kasbi, ish_joyi):
+#         super().__init__(yashash_joyi, ismi, kasbi, ish_joyi)
+
+
+
+# 22
+# class Kitob:
+#     def __init__(self,nomi,varaq_soni,janr,narxi,muallifi):
+#         self.varaq = varaq_soni
+#         self.nomi = nomi
+#         self.janri = janr
+#         self.narxi = narxi
+#         self.muallifi = muallifi
+#     def about_book(self):
+#         return f"Kitob nomi: {self.nomi}\nMuallifi: {self.muallifi}\nJanri: {self.janri}\nVaraqlar soni: {self.varaq}\nNarxi: {self.narxi}"
+# class ElektronKitob(Kitob):
+#     def __init__(self, nomi, varaq_soni, janr, narxi, muallifi,yuborilish_usuli):
+#         super().__init__(nomi, varaq_soni, janr, narxi, muallifi)
+#         self.usuli = yuborilish_usuli
+#     def get_elektronkitob(self):
+#         return f"{self.about_book()}\nijtimoiy tarmoqdan yuborilish usuli: {self.usuli}"
+
+
+# 23
+# class Mashina:
+#     def __init__(self,model,rang,yil,probeg,dvigatel,uzatma,yoqilgi):
+#         self.model = model
+#         self.rangi = rang
+#         self.yili = yil
+#         self.probeg = probeg
+#         self.dvigatel = dvigatel
+#         self.uzatma = uzatma
+#         self.yoqilgi = yoqilgi
+#     def get_car(self):
+#         return f"Mashina modeli: {self.model}\nRangi: {self.rangi}\nYili: {self.yili}\nYurgan masofasi: {self.probeg}\nDvigateli: {self.dvigatel}\nUzatma: {self.uzatma}\nYoqilgi turi: {self.yoqilgi}"
+# class ElektroAvto(Mashina):
+#     def __init__(self, model, rang, yil, probeg, dvigatel, uzatma, yoqilgi, vaqt):
+#         super().__init__(model, rang, yil, probeg, dvigatel, uzatma, yoqilgi)
+#         self.vaqt = vaqt
+#     def get_avto(self):
+#         return f"{self.get_car()}\nQuvvat olish muddati: {self.vaqt}"
