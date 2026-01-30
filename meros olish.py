@@ -75,7 +75,7 @@
 #         self.school = maktab_nomi
 #     def get_data(self):
 #         return f"{self.get_info()}\nMaktab nomi: {self.school}"
-# bola = Bola("Zoxira",15,"9-maktab")
+# bola = Bola("Zoxira",15,"17-maktab")
 
 
 # 3
@@ -437,3 +437,126 @@
 #         self.vaqt = vaqt
 #     def get_avto(self):
 #         return f"{self.get_car()}\nQuvvat olish muddati: {self.vaqt}"
+
+
+# 26
+# class Avto:
+#     def __init__(self,madel,yil,rang,dvigatel,yoqilgi,uzatma):
+#         self.madel = madel
+#         self.yil = yil
+#         self.rang = rang
+#         self.dvigatel = dvigatel
+#         self.yoqilgi = yoqilgi
+#         self.uzatma = uzatma
+#     def harakatlan(self):
+#         return f"{self.madel} mashinasi haqida ma'lumotlar"
+# class Mersedes(Avto):
+#     def __init__(self, madel, yil, rang, dvigatel,yoqilgi,uzatma,class_turi,salon,amg):
+#         super().__init__(madel, yil, rang, dvigatel,yoqilgi,uzatma)
+#         self.class_turi = class_turi
+#         self.salon = salon
+#         self.amg = amg
+#     def sport_rejimi(self):
+#         if self.amg:
+#             return "AMG Turbo rejimi yoqildi"
+#         else:
+#             return "Bu Mers AMG emas"
+# class Chevrolet(Avto):
+#     def __init__(self, madel, yil, rang, dvigatel, yoqilgi, uzatma, salon):
+#         super().__init__(madel, yil, rang, dvigatel, yoqilgi, uzatma)
+#         self.salon = salon
+#     def get_info(self):
+#         return f"Saloni: {self.salon}"
+
+
+# 27
+# class  Texnika:
+#     def __init__(self,modeli,yili,afzalliklari):
+#         self.model = modeli
+#         self.yili = yili
+#         self.afzalliklari = afzalliklari
+#     def get_info(self):
+#         return f"Modeli: {self.model}\nYili: {self.yili}\nAfzalliklari: {self.afzalliklari}"
+# class Printer(Texnika):
+#     def __init__(self, modeli, yili, afzalliklari,rangli,rangsiz):
+#         super().__init__(modeli, yili, afzalliklari)
+#         self.rangli = rangli
+#         self.rangsiz = rangsiz
+#     def get_data(self):
+#         if self.rangli:
+#             return f"{self.get_info()}\nPrinter turi: rangli"
+#         else:
+#             return f"{self.get_info()}\nPrinter turi: rangsiz"
+# class Skanner(Texnika):
+#     def __init__(self, modeli, yili, afzalliklari,shtrixkod,skanner):
+#         super().__init__(modeli, yili, afzalliklari)
+#         self.shtrixkod = shtrixkod
+#         self.skanner = skanner
+#     def get_data(self):
+#         if self.shtrixkod:
+#             return f"{self.get_info()}\nTuri: shtrixkod"
+#         else:
+#             return f"{self.get_info()}\nTuri: QR code"
+
+
+# 29
+# class Sportchi:
+#     def __init__(self,yoshi,ismi,sport_turi):
+#         self.yoshi = yoshi
+#         self.ismi = ismi
+#         self.sport_turi = sport_turi
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}\nShug'ullanuvchi sport turi: {self.sport_turi}"
+# class Futbolchi(Sportchi):
+#     def __init__(self, yoshi, ismi, sport_turi, guruh):
+#         super().__init__(yoshi, ismi, sport_turi)
+#         self.guruh = guruh
+#     def get_data(self):
+#         return f"{self.get_info()}\nGuruhdaki vazifasi: {self.guruh}"
+
+
+# 30
+# class Student:
+#     def __init__(self,ismi,yoshi):
+#         self.yoshi = yoshi
+#         self.ismi = ismi
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}"
+# class Talaba(Student):
+#     def __init__(self, ismi, yoshi, yonalishi, univeri):
+#         super().__init__(ismi, yoshi)
+#         self.yonalishi = yonalishi
+#         self.univeri = univeri
+#     def get_data(self):
+#         return f"{self.get_info()}Universiteti: {self.univeri}\nYo'nalishi: {self.yonalishi}"
+
+
+# 31
+# class Ota:
+#     def __init__(self,ismi,yoshi):
+#         self.ismi = ismi
+#         self.yoshi = yoshi
+#     def get_info(self):
+#         return f"Ismi: {self.ismi}\nYoshi: {self.yoshi}"
+# class Bola(Ota):
+#     def __init__(self, ismi, yoshi, maktab):
+#         super().__init__(ismi, yoshi)
+#         self.maktab = maktab
+#     def get_info(self):
+#         return f"{self.get_info()}\nMaktabi: {self.maktab}"
+
+
+# 32
+# class Ota:
+#     def __init__(self,ismi,yoshi,tel_raqami):
+#         self.ism = ismi
+#         self.yoshi = yoshi
+#         self.tel_raqam = tel_raqami
+#     def get_info(self):
+#         return f"Ismi: {self.ism}"
+# class Bola(Ota):
+#     def __init__(self, ismi, yoshi, tel_raqami, maktab):
+#         super().__init__(ismi, yoshi, tel_raqami)
+#         self.maktab = maktab
+#     def get_info(self):
+#         return f"{self.get_info()}\nYoshi: {self.yoshi}\nTelefon raqami: {self.tel_raqam}\nMaktabi: {self.maktab}"
