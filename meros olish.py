@@ -173,6 +173,25 @@
 #         return f"{self.get_info()}\nXotirasi: {self.memory}\nRAMi: {self.ram}"
 
 
+# 8
+# class Kompyuter:
+#     def init(self, nomi, ekran ):
+#         self.name = nomi
+#         self.screen = ekran
+#     def info(self):
+#         return f"Kompyuter nomi {self.name}\nKompyuter ekrani o'lchami:{self.screen}"
+# class Noutbook(Kompyuter):
+#     def init(self, nomi, ekran, shlef, touchbat, akkumlyator):
+#         super().init(nomi, ekran)
+#         self.shelf = shelf 
+#         self.touchbat = touchbat
+#         self.batareya = akkumlyator
+#     def get_info(self):
+#         return f"{self.info()}\nNoutbook ochilish gradusi {self.shlef}\nTouchbat borligi :{self.touch}\nZaryadkasi :{self.batareya}"
+# hp = Noutbook("Hp Envy" , "15.6 dyumm" , "180^gradus" , "Bor" , "aktiv holatda 5 soatga yetadi")
+# print(hp.get_info())
+
+
 # 9
 # class Shaxs:
 #     def __init__(self,ismi,yoshi,birth_day):
@@ -560,3 +579,66 @@
 #         self.maktab = maktab
 #     def get_info(self):
 #         return f"{self.get_info()}\nYoshi: {self.yoshi}\nTelefon raqami: {self.tel_raqam}\nMaktabi: {self.maktab}"
+
+
+# 35
+# class Hayvon:
+#     def _init__(self,nomi,yosh,turi):
+#         self.ism = nomi
+#         self.yosh = yosh
+#         self.turi = turi
+#     def info(self):
+#         return f"Ismi: {self.ism}\nYoshi: {self.yosh}\nTuri: {self.turi}"
+# class Mushuk(Hayvon):
+#     def __init__(self,nomi,yosh,turi,):
+#         super().__init__(nomi,yosh,turi)
+
+
+# 36
+# class Kompaniya:
+#     def __init__(self,company_name):
+#         self.name = company_name
+#         self.workers = []
+#         self.soni = 0
+#     def add_worker(self,worker):
+#         self.workers.append(worker)
+#         self.soni += 1
+#     def del_worker(self,worker):
+#         self.workers.remove(worker)
+#         self.soni -= 1
+#     def show_data(self):
+#         worker = "\n".join(self.workers)
+#         return f"{self.name} kompaniyasida {self.soni}ta ishchi bor va ular: \n{worker}"
+# class ITKompaniya(Kompaniya):
+#     def __init__(self, company_name):
+#         super().__init__(company_name)
+#         self.loyihalar = 0
+#     def add_project(self):
+#         self.loyihalar += 1
+#     def show_data(self):
+#         return super().show_data()
+#     def get_project(self):
+#         return f"Loyihalar soni: {self.loyihalar}"
+# cybernest = ITKompaniya("CyberNest")
+# cybernest.add_worker("Maftuna")
+# cybernest.add_worker("Zohira")
+# cybernest.add_worker("Valijon")
+# cybernest.add_worker("Sevinchoy")
+# cybernest.add_project()
+# cybernest.add_project()
+# cybernest.add_project()
+# cybernest.add_project()
+# print(cybernest.show_data(),cybernest.get_project())
+
+
+# 37
+class Mahsulot:
+    def __init__(self,nomi,turi,narx):
+        self.nomi = nomi
+        self.turi = turi
+        self.narx = narx
+    def get_info(self):
+        return f"Nomi: {self.nomi}\nTuri: {self.turi}\nNarxi: {self.narx}"
+class Ichimlik(Mahsulot):
+    def __init__(self, nomi, turi, narx, ):
+        super().__init__(nomi, turi, narx)
