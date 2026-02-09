@@ -784,3 +784,50 @@
 #         self.fan = fan
 #     def get_teacher(self):
 #         return f"{self.about_shaxs()}\nDars berish joyi: {self.maktab}\nFani: {self.fan()}"
+
+
+# 41
+# class Inson:
+#     def __init__(self,ism,yosh,kasb):
+#         self.ism = ism
+#         self.yosh = yosh
+#         self.kasb = kasb
+#     def get_info(self):
+#         return f"Ismi: {self.ism}\nYoshi: {self.yosh}\nKasbi: {self.kasb}"
+# class Shifokor(Inson):
+#     def __init__(self, ism, yosh, kasb, turi):
+#         super().__init__(ism, yosh, kasb)
+#         self.turi = turi
+#     def info(self):
+#         return f"{self.get_info()}\nKasb turi: {self.turi}"
+# doktor = Shifokor("Guli",27,"shifokor","Pediatr")
+# print(doktor.info())
+
+
+# 42
+# class Kitob:
+#     def __init__(self,author,name):
+#         self.author = author
+#         self.name = name
+#     def book_info(self):
+#         return f"Kitob nomi: {self.name}\nMuallifi: {self.author}"
+# class AudioKitob(Kitob):
+#     def __init__(self, author, name, davomiyligi):
+#         super().__init__(author, name)
+#         self.during = davomiyligi
+#     def audio_book(self):
+#         return f"{self.book_info()}\nAudio davomiyligi: {self.during}"
+# audiokitob = AudioKitob("Said Ahmad","Ufq","2soat")
+# print(audiokitob.audio_book())
+
+
+# 43
+class Qurilma:
+    def __init__(self,model,tur):
+        self.model = model
+        self.tur = tur
+    def get_qurilma(self):
+        return f"Modeli: {self.model}\nQurilma turi: {self.tur}"
+class SmartWatch(Qurilma):
+    def __init__(self, model, tur, ):
+        super().__init__(model, tur)
