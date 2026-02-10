@@ -822,12 +822,63 @@
 
 
 # 43
-class Qurilma:
-    def __init__(self,model,tur):
-        self.model = model
-        self.tur = tur
-    def get_qurilma(self):
-        return f"Modeli: {self.model}\nQurilma turi: {self.tur}"
-class SmartWatch(Qurilma):
-    def __init__(self, model, tur, ):
-        super().__init__(model, tur)
+# class Qurilma:
+#     def __init__(self,model,tur):
+#         self.model = model
+#         self.tur = tur
+#     def get_qurilma(self):
+#         return f"Modeli: {self.model}\nQurilma turi: {self.tur}"
+# class SmartWatch(Qurilma):
+#     def __init__(self, model, tur, puls, tezlik):
+#         super().__init__(model, tur)
+#         self.puls = puls
+#         self.tezlik = tezlik
+#     def get_watch(self):
+#         return f"{self.get_qurilma()}\nYurak urushi: {self.puls} marta 1 daqiqada\nTezligingiz: {self.tezlik}"
+# watch = SmartWatch("g34","smartwatch","90","3km/h")
+# print(watch.get_watch())
+
+
+# 44
+# class Sportchi:
+#     def __init__(self, ism, yosh):
+#         self.ism = ism
+#         self.yosh = yosh
+#     def about_sportchi(self):
+#         return f"Ismi: {self.ism}\nYoshi: {self.yosh}"
+# class Basketbolchi(Sportchi):
+#     def __init__(self, ism, yosh, musobaqa):
+#         super().__init__(ism, yosh)
+#         self.musobaqa = musobaqa
+#     def athlet(self):
+#         return f"{self.about_sportchi()}\nQatnashgan musobaqalar soni: {self.musobaqa}"
+# athlet = Basketbolchi("ELbek",16,12)
+# print(athlet.athlet())
+# class Futbolchi(Sportchi):
+#     def __init__(self, ism, yosh,gol,oyin):
+#         super().__init__(ism, yosh)
+#         self.gol = gol
+#         self.oyin = oyin
+#     def get_data(self):
+#         return f"{self.about_sportchi()}\nO'yin soni: {self.oyin}\nGol soni: {self.gol}"
+# futbolchi = Futbolchi("Yoqubboy",16,50,25)
+# print(futbolchi.get_data())
+
+
+# 45
+# class Kompaniya:
+#     def __init__(self,nomi,oylik,yillik):
+#         self.nomi = nomi
+#         self.oylik = oylik
+#         self.yillik = yillik
+#     def about_company(self):
+#         return f"Kompaniya nomi: {self.nomi}\nOylik daromadi: {self.oylik}\nYillik daromadi: {self.yillik}"
+# class Rahbar(Kompaniya):
+#     def __init__(self, nomi, oylik, yillik, ism_familya, staj):
+#         super().__init__(nomi, oylik, yillik)
+#         self.ism = ism_familya
+#         self.tajriba = staj
+#     def director(self):
+#         return f"{self.about_company()}\nIsm familya: {self.ism}\nRahbarlik tajribasi: {self.tajriba}"
+# boss = Rahbar("CyberNest",50000,600000,"Palankasov tuyankas","5yil")
+# print(boss.director())
