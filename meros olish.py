@@ -882,3 +882,65 @@
 #         return f"{self.about_company()}\nIsm familya: {self.ism}\nRahbarlik tajribasi: {self.tajriba}"
 # boss = Rahbar("CyberNest",50000,600000,"Palankasov tuyankas","5yil")
 # print(boss.director())
+
+
+# 46
+# class Hayvon:
+#     def __init__(self,turi,nomi):
+#         self.turi = turi
+#         self.nomi = nomi
+#     def about_animal(self):
+#         return f"Turi: {self.turi}\nNomi: {self.nomi}"
+# class Ot(Hayvon):
+#     def __init__(self, turi, nomi,zoti,boyi):
+#         super().__init__(turi, nomi)
+#         self.zoti = zoti
+#         self.boyi = boyi
+#     def get_horse(self):
+#         return f"{self.about_animal()}\nZoti: {self.zoti}\nBo'yi: {self.boyi}"
+# horse = Ot("ot","Uchqun","arab oti","1.95")
+# print(horse.get_horse())
+
+
+# 47
+# class Mashina:
+#     def __init__(self,model,yil):
+#         self.model = model
+#         self.yil = yil
+#     def get_car(self):
+#         return f"Model: {self.model}\nYili: {self.yil}"
+# class YengilMashina(Mashina):
+#     def __init__(self, model, yil,probeg,salon):
+#         super().__init__(model, yil)
+#         self.probeg = probeg
+#         self.salon = salon
+#     def about_car(self):
+#         return f"{self.get_car()}\nBosim o'tgan masofasi: {self.probeg}\nSaloni: {self.salon}"
+# car = YengilMashina("Trecker2",2023,5200,"charm")
+# print(car.about_car())
+# class YukMashina(Mashina):
+#     def __init__(self, model, yil,tonna):
+#         super().__init__(model, yil)
+#         self.tonna = tonna
+#     def about_car(self):
+#         return f"{self.get_car()}\nTonna: {self.tonna}"
+# car = YukMashina("Isuzu",2019,"5tonna")
+# print(car.about_car())
+
+
+# 48
+# class Shaxs:
+#     def __init__(self,ism,yosh,kasb):
+#         self.ism = ism
+#         self.yosh = yosh
+#         self.kasb = kasb
+#     def get_shaxs(self):
+#         return f"Ismi: {self.ism}\nYoshi: {self.yosh}\nKasbi: {self.kasb}"
+# class Dasturchi(Shaxs):
+#     def __init__(self, ism, yosh, kasb, startap):
+#         super().__init__(ism, yosh, kasb)
+#         self.startap = startap
+#     def get_dev(self):
+#         return f"{self.get_shaxs()}\nStart Uplar: {self.startap}"
+# dev = Dasturchi("Mirzabek",24,"dasturchi","bor")
+# print(dev.get_dev())
