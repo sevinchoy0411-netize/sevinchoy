@@ -97,3 +97,46 @@
 
 
 # 3
+class Taom:
+    def __init__(self,name,price):
+        self.name = name
+        self.price = price
+        self.mijoz = []
+    def add_mijoz(self,mijoz_name):
+        self.mijoz.append(mijoz_name)
+    def show_mijoz(self):
+        return self.mijoz
+    def count_mijoz(self):
+        return len(self.mijoz)
+class Restoran:
+    def __init__(self,name):
+        self.name = name
+        self.taom = []
+    def add_dish(self,dish):
+        self.taom.append(dish)
+    def show_dish(self):
+        for i , nomi in enumerate(self.taom):
+            print(f"{i+1}.{nomi.name} bu taomni tanlaganlar soni: {nomi.count_mijoz()}")
+class Mijoz:
+    def __init__(self,name):
+        self.name = name
+    def choose_dish(self, dish):
+        dish.add_mijoz(self.name)
+        print(f"{self.name} {dish.name} taomini tanladingiz")
+        print(f"Taom narxi: {dish.price}")
+        # print(f"{dish.umumiy_narx()}")
+restoran = Restoran("Restoran")
+taom1 = Taom("Chees burger",35000)
+taom2 = Taom("Pizza",10000)
+taom3 = Taom("Lavash",40000)
+restoran.add_dish(taom1)
+restoran.add_dish(taom2)
+restoran.add_dish(taom3)
+
+mijoz1 = Mijoz("Rayhona")
+mijoz2 = Mijoz("Dilnura")
+
+mijoz1.choose_dish(taom1)
+mijoz2.choose_dish(taom3)
+
+restoran.show_dish()
