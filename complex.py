@@ -97,46 +97,104 @@
 
 
 # 3
-class Taom:
-    def __init__(self,name,price):
-        self.name = name
-        self.price = price
-        self.mijoz = []
-    def add_mijoz(self,mijoz_name):
-        self.mijoz.append(mijoz_name)
-    def show_mijoz(self):
-        return self.mijoz
-    def count_mijoz(self):
-        return len(self.mijoz)
-class Restoran:
+# class Taom:
+#     def __init__(self,name,price):
+#         self.name = name
+#         self.price = price
+#         self.mijoz = []
+#     def add_mijoz(self,mijoz_name):
+#         self.mijoz.append(mijoz_name)
+#     def show_mijoz(self):
+#         return self.mijoz
+#     def count_mijoz(self):
+#         return len(self.mijoz)
+# class Restoran:
+#     def __init__(self,name):
+#         self.name = name
+#         self.taom = []
+#     def add_dish(self,dish):
+#         self.taom.append(dish)
+#     def show_dish(self):
+#         for i , nomi in enumerate(self.taom):
+#             print(f"{i+1}.{nomi.name} bu taomni tanlaganlar soni: {nomi.count_mijoz()}")
+# class Mijoz:
+#     def __init__(self,name):
+#         self.name = name
+#         self.taomlar = []
+#         self.umumiy = 0
+#     def choose_dish(self, dish):
+#         dish.add_mijoz(self.name)
+#         self.taomlar.append(dish)
+#         self.umumiy += dish.price
+#         print(f"{self.name} {dish.name} taomini tanladingiz")
+#         print(f"Taom narxi: {dish.price}")
+#         print(f"Umumiy narx: {self.umumiy}")
+# restoran = Restoran("Restoran")
+# taom1 = Taom("Chees burger",35000)
+# taom2 = Taom("Pizza",100000)
+# taom3 = Taom("Lavash",40000)
+# restoran.add_dish(taom1)
+# restoran.add_dish(taom2)
+# restoran.add_dish(taom3)
+
+# mijoz1 = Mijoz("Rayhona")
+# mijoz2 = Mijoz("Dilnura")
+
+# mijoz1.choose_dish(taom1)
+# mijoz1.choose_dish(taom2)
+# mijoz2.choose_dish(taom3)
+# mijoz2.choose_dish(taom1)
+
+# restoran.show_dish()
+
+
+
+# 4
+class Chipta:
+    def __init__(self,yonalish,narx,sana):
+        self.yonalish = yonalish
+        self.narx = narx
+        self.sana = sana
+        self.fuqaro = []
+    def add_fuqaro(self,nomi):
+        self.fuqaro.append(nomi)
+    def show_fuqaro(self):
+        return self.fuqaro
+    def count_fuqaro(self):
+        return len(self.fuqaro)
+    def chipta_narxi(self):
+        return f"Chipta narxi: {self.narx}"
+class Poyezd:
     def __init__(self,name):
         self.name = name
-        self.taom = []
-    def add_dish(self,dish):
-        self.taom.append(dish)
-    def show_dish(self):
-        for i , nomi in enumerate(self.taom):
-            print(f"{i+1}.{nomi.name} bu taomni tanlaganlar soni: {nomi.count_mijoz()}")
-class Mijoz:
-    def __init__(self,name):
+        self.chipta = []
+    def add_chipta(self,yonalish):
+        self.chipta.append(yonalish)
+    def show_chipta(self):
+        for i , direction in enumerate(self.chipta):
+            print(f"{i+1}.{direction.yonalish}")
+class Fuqaro:
+    def __init__(self,name,yosh,odam_soni):
         self.name = name
-    def choose_dish(self, dish):
-        dish.add_mijoz(self.name)
-        print(f"{self.name} {dish.name} taomini tanladingiz")
-        print(f"Taom narxi: {dish.price}")
-        # print(f"{dish.umumiy_narx()}")
-restoran = Restoran("Restoran")
-taom1 = Taom("Chees burger",35000)
-taom2 = Taom("Pizza",10000)
-taom3 = Taom("Lavash",40000)
-restoran.add_dish(taom1)
-restoran.add_dish(taom2)
-restoran.add_dish(taom3)
+        self.yosh = yosh
+        self.soni = odam_soni
+        self.umumiy = 0
+    def choose_chipta(self,yonalish):
+        yonalish.add_fuqaro(self.name)
+        if self.yosh > 7:
+            self.umumiy = self.soni * yonalish.narx
+        print(f"{self.name} siz {yonalish.yonalish} yonalishini tanladingiz\n{yonalish.chipta_narxi()}\nPoyezd jo'nab ketadigan sana: {yonalish.sana}\nYo'lovchi soni: {self.soni}\nYo'lovchilar: {self.name}")
+        print(f"Umumiy narx: {self.umumiy}")
+afrosiyob = Poyezd("Afrosiyob")
+chipta1 = Chipta("Urganch-Toshkent",250000,"20.02.2026")
+chipta2 = Chipta("Urganch-Buxoro",150000,"25.03.2026")
+afrosiyob.add_chipta(chipta1)
+afrosiyob.add_chipta(chipta2)
 
-mijoz1 = Mijoz("Rayhona")
-mijoz2 = Mijoz("Dilnura")
+fuqaro1 = Fuqaro("Zoxira",16,2)
+fuqaro2 = Fuqaro("Maftuna",16,1)
 
-mijoz1.choose_dish(taom1)
-mijoz2.choose_dish(taom3)
+fuqaro1.choose_chipta(chipta1)
+fuqaro2.choose_chipta(chipta2)
 
-restoran.show_dish()
+afrosiyob.show_chipta()
