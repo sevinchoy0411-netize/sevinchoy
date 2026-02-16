@@ -150,52 +150,52 @@
 
 
 # 4
-# class Chipta:
-#     def __init__(self,yonalish,narx,sana):
-#         self.yonalish = yonalish
-#         self.narx = narx
-#         self.sana = sana
-#         self.fuqaro = []
-#     def add_fuqaro(self,nomi):
-#         self.fuqaro.append(nomi)
-#     def show_fuqaro(self):
-#         return self.fuqaro
-#     def count_fuqaro(self):
-#         return len(self.fuqaro)
-#     def chipta_narxi(self):
-#         return f"Chipta narxi: {self.narx}"
-# class Poyezd:
-#     def __init__(self,name):
-#         self.name = name
-#         self.chipta = []
-#     def add_chipta(self,yonalish):
-#         self.chipta.append(yonalish)
-#     def show_chipta(self):
-#         for i , direction in enumerate(self.chipta):
-#             print(f"{i+1}.{direction.yonalish}")
-# class Fuqaro:
-#     def __init__(self,name,yosh,odam_soni):
-#         self.name = name
-#         self.yosh = yosh
-#         self.soni = odam_soni
-#         self.umumiy = 0
-#     def choose_chipta(self,yonalish,turi):
-#         yonalish.add_fuqaro(self.name)
-#         if self.yosh > 7:
-#             self.umumiy = self.soni * yonalish.narx
-#         print(f"{self.name} siz {yonalish.yonalish} yonalishini tanladingiz\n{yonalish.chipta_narxi()}\nPoyezd jo'nab ketadigan sana: {yonalish.sana}\nYo'lovchi soni: {self.soni}\nYo'lovchilar: {self.name}")
-#         print(f"Umumiy narx: {self.umumiy}")
-#         print(f"Bilet turi: {turi}")
-# afrosiyob = Poyezd("Afrosiyob")
-# chipta1 = Chipta("Urganch-Toshkent",250000,"20.02.2026")
-# chipta2 = Chipta("Urganch-Buxoro",150000,"25.03.2026")
-# afrosiyob.add_chipta(chipta1)
-# afrosiyob.add_chipta(chipta2)
+class Chipta:
+    def __init__(self,yonalish,narx,sana):
+        self.yonalish = yonalish
+        self.narx = narx
+        self.sana = sana
+        self.fuqaro = []
+    def add_fuqaro(self,nomi):
+        self.fuqaro.append(nomi)
+    def show_fuqaro(self):
+        return self.fuqaro
+    def count_fuqaro(self):
+        return len(self.fuqaro)
+    def chipta_narxi(self):
+        return f"Chipta narxi: {self.narx}"
+class Poyezd:
+    def __init__(self,name):
+        self.name = name
+        self.chipta = []
+    def add_chipta(self,yonalish):
+        self.chipta.append(yonalish)
+    def show_chipta(self):
+        for i , direction in enumerate(self.chipta):
+            print(f"{i+1}.{direction.yonalish}")
+class Fuqaro:
+    def __init__(self,name,yosh,odam_soni):
+        self.name = name
+        self.yosh = yosh
+        self.soni = odam_soni
+        self.umumiy = 0
+    def choose_chipta(self,yonalish,turi):
+        yonalish.add_fuqaro(self.name)
+        if self.yosh > 7:
+            self.umumiy = self.soni * yonalish.narx
+        print(f"{self.name} siz {yonalish.yonalish} yonalishini tanladingiz\n{yonalish.chipta_narxi()}\nPoyezd jo'nab ketadigan sana: {yonalish.sana}\nYo'lovchi soni: {self.soni}\nYo'lovchilar: {self.name}")
+        print(f"Umumiy narx: {self.umumiy}")
+        print(f"Bilet turi: {turi}")
+afrosiyob = Poyezd("Afrosiyob")
+chipta1 = Chipta("Urganch-Toshkent",250000,"20.02.2026")
+chipta2 = Chipta("Urganch-Buxoro",150000,"25.03.2026")
+afrosiyob.add_chipta(chipta1)
+afrosiyob.add_chipta(chipta2)
 
-# fuqaro1 = Fuqaro("Zoxira",16,2)
-# fuqaro2 = Fuqaro("Maftuna",16,1)
+fuqaro1 = Fuqaro("Zoxira",16,2)
+fuqaro2 = Fuqaro("Maftuna",16,1)
 
-# fuqaro1.choose_chipta(chipta1,"kupe")
-# fuqaro2.choose_chipta(chipta2,"plast kart")
+fuqaro1.choose_chipta(chipta1,"kupe")
+fuqaro2.choose_chipta(chipta2,"plast kart")
 
-# afrosiyob.show_chipta()
+afrosiyob.show_chipta()
