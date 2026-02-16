@@ -172,18 +172,25 @@ class Poyezd:
         self.chipta.append(yonalish)
     def show_chipta(self):
         for i , direction in enumerate(self.chipta):
-            print(f"{i+1}.{direction.yonalish}")
+            print(f"{i+1}.{direction.yonalish}\nYo'lovchilar: {direction.show_fuqaro()}\nYo'lovchi soni: {direction.count_fuqaro()}")
 class Fuqaro:
-    def __init__(self,name,yosh,odam_soni):
+    def __init__(self,name,yosh,odam_soni,kichik):
         self.name = name
         self.yosh = yosh
         self.soni = odam_soni
         self.umumiy = 0
+        self.kichik = kichik
+    def kichkinalar(self):
+        if self.kichik:
+            return f"7yoshdan kichik:"
+        else:
+            return f"7yoshdan kichik: Yo'q"
     def choose_chipta(self,yonalish,turi):
         yonalish.add_fuqaro(self.name)
         if self.yosh > 7:
             self.umumiy = self.soni * yonalish.narx
         print(f"{self.name} siz {yonalish.yonalish} yonalishini tanladingiz\n{yonalish.chipta_narxi()}\nPoyezd jo'nab ketadigan sana: {yonalish.sana}\nYo'lovchi soni: {self.soni}\nYo'lovchilar: {self.name}")
+        print(f"{self.kichkinalar()}")
         print(f"Umumiy narx: {self.umumiy}")
         print(f"Bilet turi: {turi}")
 afrosiyob = Poyezd("Afrosiyob")
@@ -192,10 +199,11 @@ chipta2 = Chipta("Urganch-Buxoro",150000,"25.03.2026")
 afrosiyob.add_chipta(chipta1)
 afrosiyob.add_chipta(chipta2)
 
-fuqaro1 = Fuqaro("Zoxira",16,2)
-fuqaro2 = Fuqaro("Maftuna",16,1)
+fuqaro1 = Fuqaro("Zoxira",16,2,False)
+fuqaro2 = Fuqaro("Maftuna",16,3,True)
 
 fuqaro1.choose_chipta(chipta1,"kupe")
 fuqaro2.choose_chipta(chipta2,"plast kart")
+fuqaro2.kichkinalar()
 
 afrosiyob.show_chipta()
