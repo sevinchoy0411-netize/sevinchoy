@@ -174,23 +174,16 @@ class Poyezd:
         for i , direction in enumerate(self.chipta):
             print(f"{i+1}.{direction.yonalish}\nYo'lovchilar: {direction.show_fuqaro()}\nYo'lovchi soni: {direction.count_fuqaro()}")
 class Fuqaro:
-    def __init__(self,name,yosh,odam_soni,kichik):
+    def __init__(self,name,yosh,odam_soni):
         self.name = name
         self.yosh = yosh
         self.soni = odam_soni
-        self.umumiy = 0
-        self.kichik = kichik
-    def kichkinalar(self):
-        if self.kichik:
-            return f"7yoshdan kichik:"
-        else:
-            return f"7yoshdan kichik: Yo'q"
+        self.umumiy = 0        
     def choose_chipta(self,yonalish,turi):
         yonalish.add_fuqaro(self.name)
         if self.yosh > 7:
             self.umumiy = self.soni * yonalish.narx
         print(f"{self.name} siz {yonalish.yonalish} yonalishini tanladingiz\n{yonalish.chipta_narxi()}\nPoyezd jo'nab ketadigan sana: {yonalish.sana}\nYo'lovchi soni: {self.soni}\nYo'lovchilar: {self.name}")
-        print(f"{self.kichkinalar()}")
         print(f"Umumiy narx: {self.umumiy}")
         print(f"Bilet turi: {turi}")
 afrosiyob = Poyezd("Afrosiyob")
@@ -204,6 +197,5 @@ fuqaro2 = Fuqaro("Maftuna",16,3,True)
 
 fuqaro1.choose_chipta(chipta1,"kupe")
 fuqaro2.choose_chipta(chipta2,"plast kart")
-fuqaro2.kichkinalar()
 
 afrosiyob.show_chipta()
