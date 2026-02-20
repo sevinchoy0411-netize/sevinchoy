@@ -189,3 +189,78 @@
 # sonlar = [Juftson(),Toqson()]
 # for son in sonlar:
 #     print(son.aniqlik())
+
+
+# 11
+# class Taom:
+#     def tami(self):
+#         return "Taom tamlari"
+# class Osh(Taom):
+#     def tami(self):
+#         return "Osh"
+# class Lagmon(Taom):
+#     def tami(self):
+#         return "Lag'mon"
+# taomlar = [Osh(),Lagmon()]
+# for taom in taomlar:
+#     print(taom.tami())
+
+
+# 12
+# class Qush:
+#     def uchush_usuli(self):
+#         return "Qushlar uchmoqda"
+# class Burgut(Qush):
+#     def uchush_usuli(self):
+#         return "Burgut uchmoqda"
+# class Qaldirgoch(Qush):
+#     def uchush_usuli(self):
+#         return "Qaldirg'ochning uchishi"
+# qushlar = [Burgut(),Qaldirgoch()]
+# for i in qushlar:
+#     print(i.uchush_usuli())
+
+
+# 13
+# class Odam:
+#     def vazifasi(self):
+#         return "Odamlarning kasbiga ko'ra vazifalari"
+# class Talaba(Odam):
+#     def vazifasi(self):
+#         return "Universitetda o'qiydi"
+# class Ishchi(Odam):
+#     def vazifasi(self):
+#         return "Zavvodda ishlaydi"
+# odam = [Talaba(),Ishchi()]
+# for i in odam:
+#     print(i.vazifasi())
+
+
+# 14
+# class Oyin:
+#     def qoidasi(self):
+#         return "O'yin qoidalari"
+# class Shaxmat(Oyin):
+#     def qoidasi(self):
+#         return "Shaxmat qoidalari"
+# class Dama(Oyin):
+#     def qoidasi(self):
+#         return "Dama qoidalari"
+# oyinlar = [Shaxmat(),Dama()]
+# for oyin in oyinlar:
+#     print(oyin.qoidasi())
+
+
+# 15
+# class Mashina:
+#     def yoqilgi_turi(self):
+#         return "Mashinalarning yoqilg'i turlari"
+# class Bmw(Mashina):
+#     def yoqilgi_turi(self):
+#         return "BMW benzinda, dizelda, elektrda yuradi"
+# class Tesla(Mashina):
+#     def yoqilgi_turi(self):
+#         return "Tesla elektrda yuradi"
+# cars = [Bmw(),Tesla()]
+# for car in cars:
+#     print(car.yoqilgi_turi())
