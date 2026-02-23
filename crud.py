@@ -47,12 +47,12 @@
 #                 if new_age:
 #                     talaba.talaba_age = new_age
 #                 return
-#             print("Talaba muvaffaqiyatli yangilandi!")
+#             print("Talaba muvaffaqiyatli yangilandi🔄️")
 #     def delete_student(self,talaba_id):
 #         for talaba in self.talabalar:
 #             if talaba.talaba_id == talaba_id:
 #                 self.talabalar.remove(talaba)
-#                 print("Talaba muvaffaqiyatli o'chirildi")
+#                 print("Talaba muvaffaqiyatli o'chirildi😥")
 #                 return 
 #     def read_student(self):
 #         for talaba in self.talabalar:

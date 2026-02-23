@@ -264,3 +264,82 @@
 # cars = [Bmw(),Tesla()]
 # for car in cars:
 #     print(car.yoqilgi_turi())
+
+
+# 16
+# class Binolar:
+#     def xona_soni(self):
+#         return "Binolardagi xona soni"
+# class Uy(Binolar):
+#     def __init__(self,xona):
+#         self.xona = xona
+#     def xona_soni(self):
+#         return f"Uydagi xonalar soni: {self.xona}"
+# class Maktab(Binolar):
+#     def __init__(self,xona):
+#         self.xonalar = xona
+#     def xona_soni(self):
+#         return f"Maktabdagi xonalar soni: {self.xonalar}"
+# binolar = [Uy(5),Maktab(15)]
+# for bino in binolar:
+#     print(bino.xona_soni())
+
+
+# 17
+# class Yozuvchi:
+#     def janr(self):
+#         return "Shoirlar janri"
+# class Shoir(Yozuvchi):
+#     def janr(self):
+#         return "Janri: she'riy"
+# class NasriyYozuvchi(Yozuvchi):
+#     def janr(self):
+#         return "Janri: nasriy asar"
+# avtors = [Shoir(),NasriyYozuvchi()]
+# for avtor in avtors:
+#     print(avtor.janr())
+
+
+# 18
+# class Hayvon:
+#     def ovoz(self):
+#         return "Hayvonlar ovozi"
+# class Ot(Hayvon):
+#     def ovoz(self):
+#         return "I-a-i-a"
+# class Sigir(Hayvon):
+#     def ovoz(self):
+#         return "Muuu"
+# hayvonlar = [Ot(),Sigir()]
+# for hayvon in hayvonlar:
+#     print(hayvon.ovoz())
+
+
+# 19
+# class Transport:
+#     def sigimi(self):
+#         return "Transportlar sig'imi"
+# class Avtobus(Transport):
+#     def sigimi(self):
+#         return "36 odam"
+# class Samolyot(Transport):
+#     def sigimi(self):
+#         return "300-550 odam"
+# transportlar = [Avtobus(),Samolyot()]
+# for transport in transportlar:
+#     print(transport.sigimi())
+
+
+# 20
+# class Kompaniya:
+#     def ish_turi(self):
+#         return "Kompaniyalarning nomiga kora ish turi"
+# class ITKompaniya(Kompaniya):
+#     def ish_turi(self):
+#         return "Tarmoq, ilovalar , websaytlar onlayn taraflama"
+# class QurilishKompaniya(Kompaniya):
+#     def ish_turi(self):
+#         return "Uylar qurilishi kabi ishlar"
+# kompaniyalar = [ITKompaniya(),QurilishKompaniya()]
+# for kompaniya in kompaniyalar:
+#     print(kompaniya.ish_turi())
