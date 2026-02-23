@@ -64,3 +64,46 @@
 # univer.update_student(1,"Nizomaddin",20)
 # univer.delete_student(1)
 # univer.read_student()
+
+
+# class Kitob:
+#     def __init__(self,kitob_id,kitob_name):
+#         self.kitob_id = kitob_id
+#         self.kitob_name = kitob_name
+#     def kitob_info(self):
+#         return f"Kitob ID'si: {self.kitob_id}\nKitob_nomi: {self.kitob_name}"
+# class Kutubxona:
+#     def __init__(self,name):
+#         self.name = name
+#         self.kitoblar = []
+#     def creat_kitob(self,kitob_id,kitob_name):
+#         kitob = Kitob(kitob_id,kitob_name)
+#         self.kitoblar.append(kitob)
+#         print("Kitob muvaffaqiyatli qo'shildi👌")
+#     def update_kitob(self,kitob_id,new_name):
+#         for kitob in self.kitoblar:
+#             if kitob.kitob_id == kitob_id:
+#                 if new_name:
+#                     kitob.kitob_name = new_name
+#                     return
+#             print("Kitob muvaffaqiyatli yangilandi🔄️")
+#     def delete_kitob(self,kitob_id):
+#         for kitob in self.kitoblar:
+#             if kitob.kitob_id == kitob_id:
+#                 self.kitoblar.remove(kitob)
+#                 print("Talaba muvaffaqiyatli o'chirildi😥")
+#                 return 
+#     def read_kitob(self):
+#         for kitob in self.kitoblar:
+#             print(kitob.kitob_info())
+
+# kutubxona = Kutubxona("Alisher Navoiy")
+# kutubxona.creat_kitob(1,"Ufq")
+# kutubxona.creat_kitob(2,"Molxona")
+# kutubxona.creat_kitob(3,"1984")
+# kutubxona.creat_kitob(4,"Propaganda")
+# kutubxona.update_kitob(1,"Qizil ajdarho")
+# kutubxona.delete_kitob(4)
+# kutubxona.read_kitob()
+
+
