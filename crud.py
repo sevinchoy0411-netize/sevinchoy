@@ -206,5 +206,3 @@
 # tizim.update_user(2,"dilnura2011","dilnura2525")
 # tizim.delete_user(3)
 # tizim.read_user()
-
-
