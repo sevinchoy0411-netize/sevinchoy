@@ -152,57 +152,59 @@
 # tizim.read_user()
 
 
-class User:
-    def __init__(self,id,username,email,password):
-        self.id = id
-        self.username = username
-        self.email = email
-        self.password = password
-    def info(self):
-        return f"Foydalanuvchi ID'si: {self.id}\nFoydalanuvchi nomi: {self.username}\nFoydalanuvchi Email'i: {self.email}\nParoli: {self.password}"
-class Tizim:
-    def __init__(self):
-        self.users = []
-    def create_user(self,id,username,email,password):
-        user = User(id,username,email,password)
-        self.users.append(user)
-        print("Foydalanuvchi muvaffaqiyatli qo'shildi👌")
-    def update_user(self, id, old_password, new_username = None, new_email = None, new_password = None):
-        for user in self.users:
-            if user.id == id:
-                if new_username:
-                    if user.password == old_password:
-                        user.username = new_username
-                        print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
-                    else:
-                        print("Parol xato qayta urinib ko'ring")
-                elif new_email:
-                    if user.password == old_password:
-                        user.email = new_email
-                        print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
-                    else:
-                        print("Parol xato qayta urinib ko'ring")
-                elif new_password:
-                    if user.password == old_password:
-                        user.password = new_password
-                        print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
-                    else:
-                        print("Parol xato qayta urinib ko'ring")
-                return
-    def delete_user(self,id):
-        for user in self.users:
-            if user.id == id:
-                self.users.remove(user)
-                print("FOydalanuvchi muvaffaqiyatli o'chirildi😥")
-                return
-    def read_user(self):
-        for user in self.users:
-            print(user.info())
+# class User:
+#     def __init__(self,id,username,email,password):
+#         self.id = id
+#         self.username = username
+#         self.email = email
+#         self.password = password
+#     def info(self):
+#         return f"Foydalanuvchi ID'si: {self.id}\nFoydalanuvchi nomi: {self.username}\nFoydalanuvchi Email'i: {self.email}\nParoli: {self.password}"
+# class Tizim:
+#     def __init__(self):
+#         self.users = []
+#     def create_user(self,id,username,email,password):
+#         user = User(id,username,email,password)
+#         self.users.append(user)
+#         print("Foydalanuvchi muvaffaqiyatli qo'shildi👌")
+#     def update_user(self, id, old_password, new_username = None, new_email = None, new_password = None):
+#         for user in self.users:
+#             if user.id == id:
+#                 if new_username:
+#                     if user.password == old_password:
+#                         user.username = new_username
+#                         print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
+#                     else:
+#                         print("Parol xato qayta urinib ko'ring")
+#                 elif new_email:
+#                     if user.password == old_password:
+#                         user.email = new_email
+#                         print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
+#                     else:
+#                         print("Parol xato qayta urinib ko'ring")
+#                 elif new_password:
+#                     if user.password == old_password:
+#                         user.password = new_password
+#                         print("Foydalanuvchi ma'lumotlari muvaffaqiyatli yangilandi🔄️")
+#                     else:
+#                         print("Parol xato qayta urinib ko'ring")
+#                 return
+#     def delete_user(self,id):
+#         for user in self.users:
+#             if user.id == id:
+#                 self.users.remove(user)
+#                 print("FOydalanuvchi muvaffaqiyatli o'chirildi😥")
+#                 return
+#     def read_user(self):
+#         for user in self.users:
+#             print(user.info())
 
-tizim = Tizim()
-tizim.create_user(1,"Rayhona2011","rayhonarahmanova0@gmail.com","gbyrhfhdj")
-tizim.create_user(2,"Dilnura2555","dilnura2525@gmail.com","dilnura2011")
-tizim.create_user(3,"Golibjon5585","golibjon2011@gmail.com","yfdg")
-tizim.update_user(2,"dilnura2011","dilnura2525")
-tizim.delete_user(3)
-tizim.read_user()
+# tizim = Tizim()
+# tizim.create_user(1,"Rayhona2011","rayhonarahmanova0@gmail.com","gbyrhfhdj")
+# tizim.create_user(2,"Dilnura2555","dilnura2525@gmail.com","dilnura2011")
+# tizim.create_user(3,"Golibjon5585","golibjon2011@gmail.com","yfdg")
+# tizim.update_user(2,"dilnura2011","dilnura2525")
+# tizim.delete_user(3)
+# tizim.read_user()
+
+
