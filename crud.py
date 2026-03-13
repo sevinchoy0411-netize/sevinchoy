@@ -193,7 +193,7 @@
 #         for user in self.users:
 #             if user.id == id:
 #                 self.users.remove(user)
-#                 print("FOydalanuvchi muvaffaqiyatli o'chirildi😥")
+#                 print("Foydalanuvchi muvaffaqiyatli o'chirildi😥")
 #                 return
 #     def read_user(self):
 #         for user in self.users:
