@@ -22,3 +22,12 @@
 # with open("data.json","r") as f:
 #     malumot = json.load(f)
 # print(malumot)
+
+
+
+import csv
+
+# with open("data.csv","w",newline="") as f:
+#     writer = csv.writer(f)
+#     writer.writerow(["Ism", "Yosh"])
+#     writer.writerow(["Ali", 20])
