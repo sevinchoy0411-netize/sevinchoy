@@ -1,1 +1,24 @@
-salom hammaga
+finally nima qiladi?
+Custom exception nima?
+raise operatori nima qiladi?
+Exception turlariga misol keltiring.
+try-except-else qanday ishlaydi?
+append mode nima?
+json.load va json.loads farqi?
+json.dump va json.dumps farqi?
+Python dictni JSONga qanday o'tkazamiz?
+JSON string nima?
+csv nima?
+csv modulidan qanday foydalaniadi?
+reader va writer farqi nimada?
+csv fayldan ma'lumot o'qish qanday amalga oshiriladi
+delimiter nima?
+
+
+Database yaratish
+Databaseni ulanishini alohida modul qo'yib db.py chaqirish
+jadval yaratish(id,name,age,email,phone)
+jadvalga malumot qoshish
+malumotni yangilash
+malumotni ochirish
+malumot olish
