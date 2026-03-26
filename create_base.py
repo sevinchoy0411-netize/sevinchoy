@@ -1,12 +1,12 @@
-import psycopg2
-conn = psycopg2.connect(
-    host = "localhost",
-    database = "vorislar",
-    user = "postgres",
-    password = "04112012"
-)
-conn.autocommit = True
-cur = conn.cursor()
+# import psycopg2
+# conn = psycopg2.connect(
+#     host = "localhost",
+#     database = "vorislar",
+#     user = "postgres",
+#     password = "04112012"
+# )
+# conn.autocommit = True
+# cur = conn.cursor()
 
 # cur.execute(
 #     "CREATE DATABASE vorislar"
