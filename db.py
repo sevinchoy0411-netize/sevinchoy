@@ -8,9 +8,9 @@ con = psycopg2.connect(
 con.autocommit = True
 cur = con.cursor()
 
-# cur.execute(
-#     "INSERT INTO users (name,age,email,phone) VALUES('Sevinchoy',15,'sevinchoy0411@gmail.com',991234567)"
-# )
+cur.execute(
+    "INSERT INTO students (name,age,subject,sinf) VALUES('',14,'backend',8)"
+)
 
 # cur.execute(
 #     "SELECT * FROM users"
