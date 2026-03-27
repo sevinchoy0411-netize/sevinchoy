@@ -1,12 +1,12 @@
-import psycopg2
-con = psycopg2.connect(
-    host = "localhost",
-    database = "vorislar",
-    user = "postgres",
-    password = "04112012"
-)
-con.autocommit = True
-cur = con.cursor()
+# import psycopg2
+# con = psycopg2.connect(
+#     host = "localhost",
+#     database = "vorislar",
+#     user = "postgres",
+#     password = "04112012"
+# )
+# con.autocommit = True
+# cur = con.cursor()
 
 # cur.execute(
 #     "INSERT INTO students (name,age,subject,sinf) VALUES('Sevinchoy',14,'backend',8)"
