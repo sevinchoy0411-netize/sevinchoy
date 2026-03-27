@@ -6,3 +6,4 @@ def db_connect():
         user = "postgres",
         password = "04112012"
     )
+    return conn
