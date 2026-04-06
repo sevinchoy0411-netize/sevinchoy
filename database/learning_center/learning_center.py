@@ -1,4 +1,4 @@
-from db_def import db_connect
+from sevinchoy.database.learning_center.db_def import db_connect
 
 conn = db_connect()
 conn.autocommit = True
