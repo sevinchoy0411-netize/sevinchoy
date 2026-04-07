@@ -1,4 +1,4 @@
-from db import db_conect
+from connect_db import db_conect
 
 conn = db_conect()
 conn.autocommit = True
@@ -52,9 +52,8 @@ cur = conn.cursor()
 # )
 
 # cur.execute(
-    # "SELECT customer.name , cars.model FROM enrollments JOIN customer ON customer.id = enrollments.customer_id JOIN cars ON cars.id = enrollments.car_id"
+#     "SELECT customer.name , cars.model FROM enrollments JOIN customer ON customer.id = enrollments.customer_id JOIN cars ON cars.id = enrollments.car_id"
 # )
 # rows = cur.fetchall()
 # for row in rows:
-    # print
-    # (row)
+#     print(row)
