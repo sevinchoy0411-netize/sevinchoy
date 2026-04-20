@@ -70,7 +70,7 @@ cur = conn.cursor()
 # )
 # rows = cur.fetchall()
 # for row in rows:
-#     print(row)
+    # print(row)
 
 # cur.execute(
 #     "SELECT * FROM students ORDER BY name DESC"
