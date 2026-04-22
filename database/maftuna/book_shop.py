@@ -106,3 +106,17 @@ conn.autocommit = True
 # rows = cur.fetchall()
 # for row in rows:
 #     print(row)
+
+# cur.execute(
+#     "SELECT * FROM books WHERE price BETWEEN 30000 AND 50000"
+# )
+# rows = cur.fetchall()
+# for row in rows:
+#     print(row)
+
+# cur.execute(
+#     "SELECT name AS kitob_nomi FROM books"
+# )
+# rows = cur.fetchall()
+# for row in rows:
+#     print(row)
