@@ -1,4 +1,4 @@
-from sevinchoy.database.learning_center.db_def import db_connect
+from db_def import db_connect
 
 conn = db_connect()
 conn.autocommit = True
@@ -63,9 +63,9 @@ cur = conn.cursor()
     # "INSERT INTO enrolments (student_id,course_id) VALUES (2,1)"
 # )
 
-# cur.execute(
-#     "SELECT students.name,courses.title FROM enrolments JOIN students ON students.id=enrolments.student_id JOIN courses ON courses.id=enrolments.course_id"
-# )
-# rows = cur.fetchall()
-# for row in rows:
-#     print(row)
+cur.execute(
+    "SELECT students.name,courses.title FROM enrolments JOIN students ON students.id=enrolments.student_id JOIN courses ON courses.id=enrolments.course_id"
+)
+rows = cur.fetchall()
+for row in rows:
+    print(row)
